@@ -30,6 +30,12 @@ Collection$
 	*	'Hello World' working correctly (Using **Nexus S** as my virtual android device)
 	*	Starting to work strictly on the interface (GUI) - based on our Mindmap / Lucid Chart Presentation - not messing with class files at all.  Creating global variables for inputs / buttons / etc...   In progress...
 
+### 11/21/2013  ~  LWA  ~  Notes:
+
+*	General screen Layout is created through .xml code.  When a new Activity (screen, basically) is created, a Java class file and corresponding .xml file are made.
+*	Good tutorial for switching screens in android development: <http://www.androidhive.info/2011/08/how-to-switch-between-activities-in-android/>
+*	Still working on making basic screens (but a couple are started - and working on an emulator - if anyone wants to take a look) - assigning ids to buttons / text fields.  the .xml editor inside eclipse allows for id refactoring and reference (it's very useful)
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On
