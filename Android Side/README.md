@@ -36,6 +36,14 @@ Collection$
 *	Good tutorial for switching screens in android development: <http://www.androidhive.info/2011/08/how-to-switch-between-activities-in-android/>
 *	Still working on making basic screens (but a couple are started - and working on an emulator - if anyone wants to take a look) - assigning ids to buttons / text fields.  the .xml editor inside eclipse allows for id refactoring and reference (it's very useful)
 
+### 11/21/2013  ~  RDF  ~  Notes:
+
+*	Finally able to load windows app for GITHUB on computer after assistance from team members.
+*	Still experiencing problems running Eclipse for the android application on my computer.
+*	While trying to solve Eclipse problem, I found firebase application to launch an android app.
+*	Plan to watch youtube video on hello world android app and work on getting Eclipse to run, but on Tomcat software for server.
+
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On
