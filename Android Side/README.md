@@ -43,6 +43,14 @@ Collection$
 *	While trying to solve Eclipse problem, I found firebase application to launch an android app.
 *	Plan to watch youtube video on hello world android app and work on getting Eclipse to run, but on Tomcat software for server.
 
+### 11/28/2013 ~ KJS ~ Notes:
+
+*	Researching information on interfacing MySQL database with Android.
+	*	Will need to use ORM
+	* 	Until rest of details are clear, work on Android classes will be put on hold. (Need to know how to store object information, call it, etc.)
+*	Installed Apache Tomcat 7.0.47 and currently working on setup.
+*	Expect progress to be made over the course of the next few days.
+
 
 ### Next Date...  ~  initials  ~  Notes:
 
