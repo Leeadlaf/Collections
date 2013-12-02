@@ -51,6 +51,13 @@ Collection$
 *	Installed Apache Tomcat 7.0.47 and currently working on setup.
 *	Expect progress to be made over the course of the next few days.
 
+### 12/01/2013  ~  LWA  ~  Notes:
+
+*	Changing background color to black.  Add: android:background="@android:color/black" to the .xml layout file.  There must be a way to change all layouts at once.  New Theme?
+	*	Themes are controlled in different places for different versions of Android.  _All_ versions must be in agreement for the proper one to show. see <http://stackoverflow.com/questions/18047560/android-eclipse-trouble-with-applying-themes>
+	*	Finally got the **Holo** theme to work (dark background, light buttons)
+*	Using my **HTC One** to test screens - _not_ the emulator (it is MUCH faster to debug using a real device vs the software emulator)
+*	Still working on connectivity and more screens - starting to keep a running list of all variables (should help tie things together)
 
 ### Next Date...  ~  initials  ~  Notes:
 

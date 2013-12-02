@@ -40,15 +40,6 @@
         android:layout_marginTop="22dp"
         android:text="Login" />
 
-    <Button
-        android:id="@+id/newUserButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/loginButton"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="52dp"
-        android:text="New User" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -58,5 +49,13 @@
         android:layout_marginBottom="22dp"
         android:layout_marginRight="36dp"
         android:text="@string/version" />
+
+    <Button
+        android:id="@+id/newUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/loginButton"
+        android:text="New User" />
 
 </RelativeLayout>
