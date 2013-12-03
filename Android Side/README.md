@@ -62,15 +62,14 @@ Collection$
 ### 12/03/2013  ~  LWA  ~  Notes:
 
 *	Each screen has its own .java file, .xml file, and must be entered into the AndroidManifest as an activity
-*	Removed Default Menus from screens
+*	Removed Default Menus from screens - Explore using menus to change setting? (instead of separate screens)
 *	Figured out multiple  buttons on the same screen (I think - see _LoginActivity.java_ in 'Test Version 02')
 	*	Using One _OnClickHandler_. See <http://stackoverflow.com/questions/3795439/one-onclickhandler-for-multiple-buttons>
 *	Changing Button IDs to make more sense:  ie. *logOutButton* instead of *logOut*
 *	Screens (ie. Home, New User, Collections, as well as the entire app) can be titled via the values/styles.xml file
 *	Starting to add _TBD_ to top of files (technical debt).  Also adding code titles (version information, author, etc)
 *	Slowly adding and linking more screens - I have no idea how to display or populate data (collections, items, etc...)
-*	Explore using menus to change setting? (instead of separate screens)
-*	
+*	Created a list of suggested Technical Debt (in documentation folder)
 
 ### Next Date...  ~  initials  ~  Notes:
 

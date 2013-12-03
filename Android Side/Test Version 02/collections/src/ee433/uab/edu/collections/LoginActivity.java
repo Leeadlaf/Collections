@@ -50,6 +50,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 		       	break;
 		        case R.id.loginButton:
 		       	   Intent loginScreen = new Intent (getApplicationContext(), HomeScreenActivity.class);
+		       	   
+		       	   //TBD - Check to see if the user / password is in the database!
 		   			
 		       	   //starting new activity - login screen
 		       	   startActivity(loginScreen);
