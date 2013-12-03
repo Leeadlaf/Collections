@@ -29,6 +29,10 @@
         <activity
             android:name="ee433.uab.edu.collections.NewUserActivity"
             android:label="@string/title_activity_new_user" >
+        </activity>
+        <activity
+            android:name="ee433.uab.edu.collections.viewCollectionsActivity"
+            android:label="Collections List" >
         </activity>        
             
     </application>
