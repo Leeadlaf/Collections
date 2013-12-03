@@ -31,8 +31,8 @@ public final class R {
         public static final int desiredPassword=0x7f08000f;
         public static final int desiredUserName=0x7f08000c;
         public static final int desiredZipCode=0x7f08000e;
-        public static final int goHome=0x7f080001;
-        public static final int logOut=0x7f080005;
+        public static final int goHomeButton=0x7f080001;
+        public static final int logOutButton=0x7f080005;
         public static final int loginButton=0x7f08000a;
         public static final int networking=0x7f080006;
         public static final int networkingButton=0x7f080004;

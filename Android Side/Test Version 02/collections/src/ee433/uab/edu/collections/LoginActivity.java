@@ -9,18 +9,19 @@
 
 package ee433.uab.edu.collections;
 
-//TBD - Clean up code
+//TBD - Clean up and comment code (ongoing)
 //    - ADD login mechanics: Check user name / password against Database?
+//    - Fix indents
 //    - 
 
-import ee433.uab.edu.collections.R.id;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-//import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
+//import ee433.uab.edu.collections.R.id;
+//import android.view.View.OnClickListener;
+//import android.view.Menu;
 
 public class LoginActivity extends Activity implements View.OnClickListener {
 
@@ -29,64 +30,30 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login_screen);
 	
+		//Defining buttons
 		Button newUserButton = (Button) findViewById (R.id.newUserButton);
 		Button loginButton = (Button) findViewById (R.id.loginButton);
 		
 		//Listen for button press
-		//newUserButton.setOnClickListener(new View.OnClickListener() {
 		newUserButton.setOnClickListener(this);
 		loginButton.setOnClickListener(this);}	
 			
-			
-			@Override
-			public void onClick(View v) {
-				switch(v.getId()) {
-		           case R.id.newUserButton:
-		        	   Intent nextScreen = new Intent (getApplicationContext(), NewUserActivity.class);
+		//If a button is clicked
+		@Override
+		public void onClick(View v) {
+			switch(v.getId()) {
+				case R.id.newUserButton:
+					Intent newUserScreen = new Intent (getApplicationContext(), NewUserActivity.class);
 		   			
-		        	   //starting new activity
-		        	   startActivity(nextScreen);
-		           break;
-		           case R.id.loginButton:
-		        	   Intent loginScreen = new Intent (getApplicationContext(), HomeScreenActivity.class);
+		       	   //starting new activity - create new user screen
+		       	   startActivity(newUserScreen);
+		       	break;
+		        case R.id.loginButton:
+		       	   Intent loginScreen = new Intent (getApplicationContext(), HomeScreenActivity.class);
 		   			
-		        	   //starting new activity
-		        	   startActivity(loginScreen);
-		           break;
-				}
+		       	   //starting new activity - login screen
+		       	   startActivity(loginScreen);
+		        break;
 			}
-			
-			
-//			//@Override
-//			public void onClick(View v) {
-//				// TODO Auto-generated method stub
-//				Intent nextScreen = new Intent (getApplicationContext(), NewUserActivity.class);
-//				
-//				//starting new activity
-//				startActivity(nextScreen);
-//			}
-	//	});
-		
-
-	
-	
-		
-	
-	
-	
-	
+		}
 	}
-
-	
-	
-	
-	
-	
-//	@Override
-//	public boolean onCreateOptionsMenu(Menu menu) {
-//		// Inflate the menu; this adds items to the action bar if it is present.
-//		getMenuInflater().inflate(R.menu.main, menu);
-//		return true;
-//	}
-
-//}

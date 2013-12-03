@@ -69,6 +69,8 @@ Collection$
 *	Screens (ie. Home, New User, Collections, as well as the entire app) can be titled via the values/styles.xml file
 *	Starting to add _TBD_ to top of files (technical debt).  Also adding code titles (version information, author, etc)
 *	Slowly adding and linking more screens - I have no idea how to display or populate data (collections, items, etc...)
+*	Explore using menus to change setting? (instead of separate screens)
+*	
 
 ### Next Date...  ~  initials  ~  Notes:
 
