@@ -71,6 +71,10 @@ Collection$
 *	Slowly adding and linking more screens - I have no idea how to display or populate data (collections, items, etc...)
 *	Created a list of suggested Technical Debt (in documentation folder)
 
+### 12/03/2013...  ~  KJS  ~  Notes:
+
+*	Interacting with other apps: http://developer.android.com/training/basics/intents/index.html
+*	Location, in case we get this far: http://developer.android.com/training/building-userinfo.html
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On
