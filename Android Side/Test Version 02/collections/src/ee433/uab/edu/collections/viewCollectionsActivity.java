@@ -9,9 +9,9 @@
 
 package ee433.uab.edu.collections;
 
-//TBD - Clean up and comment code (ongoing)
-//    - view collections?
-//    - 
+// Clean up and comment code (ongoing)
+// view collections - Dynamic Information (fragments?)
+// 
 
 import android.app.Activity;
 import android.content.Intent;

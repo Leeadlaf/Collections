@@ -71,10 +71,18 @@ Collection$
 *	Slowly adding and linking more screens - I have no idea how to display or populate data (collections, items, etc...)
 *	Created a list of suggested Technical Debt (in documentation folder)
 
-### 12/03/2013...  ~  KJS  ~  Notes:
+### 12/03/2013  ~  KJS  ~  Notes:
 
-*	Interacting with other apps: http://developer.android.com/training/basics/intents/index.html
-*	Location, in case we get this far: http://developer.android.com/training/building-userinfo.html
+*	Interacting with other apps: <http://developer.android.com/training/basics/intents/index.html>
+*	Location, in case we get this far: <http://developer.android.com/training/building-userinfo.html>
+
+### 12/04/2013  ~  LWA  ~  Notes:
+
+*	Starting to keep a list of TBD in the base folder (collections) **Readme.md** file.  This is stuff already marked as _TBD_ in the code, not a full list of everything needed to be done.  Please add / delete as you see fit
+*	Possibly useful Links:
+	*	_Connect android device to PHP Script_: <http://m-zeeshanarif.blogspot.com/2013/05/android-connecting-to-server-mysql.html>
+	*	_Building a Dynamic UI with Fragments_: <http://developer.android.com/training/basics/fragments/index.html>
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On

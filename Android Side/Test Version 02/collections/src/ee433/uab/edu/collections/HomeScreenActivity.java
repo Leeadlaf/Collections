@@ -10,11 +10,10 @@
 
 package ee433.uab.edu.collections;
 
-//TBD - Multiple button implementation must be fixed
-//    - Clean up and comment code (ongoing)
-//    - add Code to log off the user
-//    - Fix indents
-//	  - 
+// Clean up and comment code (ongoing)
+// add Code to log off the user
+// Fix indents??
+// 
 
 import android.os.Bundle;
 import android.view.View;

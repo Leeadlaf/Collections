@@ -8,6 +8,12 @@
 
 package ee433.uab.edu.collections;
 
+// Clean up and comment code (ongoing)
+// Store information written in by the user
+// Create new user
+// 
+// 
+
 import android.os.Bundle;
 import android.app.Activity;
 

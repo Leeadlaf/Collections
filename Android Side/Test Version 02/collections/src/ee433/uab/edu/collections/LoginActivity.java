@@ -9,10 +9,10 @@
 
 package ee433.uab.edu.collections;
 
-//TBD - Clean up and comment code (ongoing)
-//    - ADD login mechanics: Check user name / password against Database?
-//    - Fix indents
-//    - 
+// Clean up and comment code (ongoing)
+// ADD login mechanics: Check user name / password against Database?
+// Fix indents??
+// 
 
 import android.os.Bundle;
 import android.app.Activity;
