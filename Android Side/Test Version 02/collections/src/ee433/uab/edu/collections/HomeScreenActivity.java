@@ -53,7 +53,7 @@ public class HomeScreenActivity extends Activity implements View.OnClickListener
 	        	   startActivity(collectionsScreen);
 	           break;
 	           case R.id.addItemButton:
-	        	   Intent addItemScreen = new Intent (getApplicationContext(), viewCollectionsActivity.class); // TBD - Fix Class
+	        	   Intent addItemScreen = new Intent (getApplicationContext(), GlobalClass.class); // TBD - Fix Class
 	   			
 	        	   //starting new activity - add item
 	        	   startActivity(addItemScreen);

@@ -82,6 +82,7 @@ Collection$
 *	Possibly useful Links:
 	*	_Connect android device to PHP Script_: <http://m-zeeshanarif.blogspot.com/2013/05/android-connecting-to-server-mysql.html>
 	*	_Building a Dynamic UI with Fragments_: <http://developer.android.com/training/basics/fragments/index.html>
+*	Testing dynamically populated List View (via _Add Item_ button).  Code from: <http://androidexample.com/Dynamically_Create_View_Elements__-_Android_Example/index.php?view=article_discription&aid=115&aaid=137>
 
 ### Next Date...  ~  initials  ~  Notes:
 

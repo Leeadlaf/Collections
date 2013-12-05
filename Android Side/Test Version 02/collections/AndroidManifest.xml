@@ -34,7 +34,10 @@
             android:name="ee433.uab.edu.collections.viewCollectionsActivity"
             android:label="Collections List" >
         </activity>        
-            
+        <activity
+            android:name="ee433.uab.edu.collections.GlobalClass"
+            android:label="List Test" >
+        </activity>            
     </application>
 
 </manifest>
