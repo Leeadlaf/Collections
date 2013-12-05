@@ -84,6 +84,13 @@ Collection$
 	*	_Building a Dynamic UI with Fragments_: <http://developer.android.com/training/basics/fragments/index.html>
 *	Testing dynamically populated List View (via _Add Item_ button).  Code from: <http://androidexample.com/Dynamically_Create_View_Elements__-_Android_Example/index.php?view=article_discription&aid=115&aaid=137>
 
+### 12/05/2013  ~  LWA  ~  Notes:
+
+*	Dynamically populated list view seems to be something that will work for us (click 'View Collections' in Test Version 02) - although there is a lot of java code that needs to be written on the back end once we get information out of the database.
+*	Different layouts can be put on the same screen - ie. *ViewYourCollectionList.java* & its associated layout, *your_collection_list_screen* 
+*	Creating an activity specifically to view your collections - and another to view others collections (forgetting about the tab display for now)  This *should* be done with a view collections master class then subclasses for displaying our or their collections.  
+*	Did a lot of refactoring to make files / titles more clear
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On

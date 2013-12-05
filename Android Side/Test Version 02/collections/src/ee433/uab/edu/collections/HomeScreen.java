@@ -1,5 +1,5 @@
 /*
- * File: HomeScreenActivity.java
+ * File: HomeScreen.java
  * Author: Lee Adlaf <adlaf@uab.edu>
  * Vers: 1.0.5 12/03/2013 lwa - cleaned up code, fixed buttons
  * Vers: 1.0.1 12/03/2013 lwa - modified code, more buttons working
@@ -22,7 +22,7 @@ import android.app.Activity;
 import android.content.Intent;
 //import android.view.Menu;
 
-public class HomeScreenActivity extends Activity implements View.OnClickListener {
+public class HomeScreen extends Activity implements View.OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,25 +47,25 @@ public class HomeScreenActivity extends Activity implements View.OnClickListener
 		public void onClick(View v) {
 			switch(v.getId()) {
 	           case R.id.viewCollectionsButton:
-	        	   Intent collectionsScreen = new Intent (getApplicationContext(), viewCollectionsActivity.class);
+	        	   Intent collectionsScreen = new Intent (getApplicationContext(), ViewYourCollectionList.class);
 	   			
 	        	   //starting new activity - view collections
 	        	   startActivity(collectionsScreen);
 	           break;
 	           case R.id.addItemButton:
-	        	   Intent addItemScreen = new Intent (getApplicationContext(), GlobalClass.class); // TBD - Fix Class
+	        	   Intent addItemScreen = new Intent (getApplicationContext(), ViewYourCollectionList.class); // TBD - Fix Class
 	   			
 	        	   //starting new activity - add item
 	        	   startActivity(addItemScreen);
 	           break;
 	           case R.id.networkingButton:
-	        	   Intent networkingScreen = new Intent (getApplicationContext(), viewCollectionsActivity.class); // TBD - Fix Class
+	        	   Intent networkingScreen = new Intent (getApplicationContext(), ViewYourCollectionList.class); // TBD - Fix Class
 	   			
 	        	   //starting new activity - networking menu
 	        	   startActivity(networkingScreen);
 	           break;
 	           case R.id.logOutButton:
-	        	   Intent logOut = new Intent (getApplicationContext(), LoginActivity.class);
+	        	   Intent logOut = new Intent (getApplicationContext(), Login.class);
 	   			
 	        	   //TBD - Add Code to log off the user!
 	        	   

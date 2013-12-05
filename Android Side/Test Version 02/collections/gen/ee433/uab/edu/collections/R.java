@@ -24,35 +24,37 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080013;
-        public static final int addItemButton=0x7f080004;
-        public static final int createNewUserButton=0x7f080011;
-        public static final int desiredEmailAddress=0x7f08000e;
-        public static final int desiredPassword=0x7f080010;
-        public static final int desiredUserName=0x7f08000d;
-        public static final int desiredZipCode=0x7f08000f;
+        public static final int action_settings=0x7f080015;
+        public static final int addItemButton=0x7f080003;
+        public static final int createNewUserButton=0x7f080010;
+        public static final int desiredEmailAddress=0x7f08000d;
+        public static final int desiredPassword=0x7f08000f;
+        public static final int desiredUserName=0x7f08000c;
+        public static final int desiredZipCode=0x7f08000e;
         public static final int goHomeButton=0x7f080001;
-        public static final int linearMain=0x7f080002;
-        public static final int logOutButton=0x7f080006;
-        public static final int loginButton=0x7f08000b;
-        public static final int networking=0x7f080007;
-        public static final int networkingButton=0x7f080005;
-        public static final int newUserButton=0x7f08000c;
+        public static final int homeButton=0x7f080013;
+        public static final int linearMain=0x7f080012;
+        public static final int logOutButton=0x7f080005;
+        public static final int loginButton=0x7f08000a;
+        public static final int networking=0x7f080006;
+        public static final int networkingButton=0x7f080004;
+        public static final int newUserButton=0x7f08000b;
+        public static final int othersCollectionsButtons=0x7f080014;
         public static final int textView1=0x7f080000;
-        public static final int textView2=0x7f080012;
-        public static final int userName=0x7f080009;
-        public static final int userPassword=0x7f08000a;
-        public static final int version=0x7f080008;
-        public static final int viewCollectionsButton=0x7f080003;
+        public static final int textView2=0x7f080011;
+        public static final int userName=0x7f080008;
+        public static final int userPassword=0x7f080009;
+        public static final int version=0x7f080007;
+        public static final int viewCollectionsButton=0x7f080002;
     }
     public static final class layout {
         public static final int add_item=0x7f030000;
         public static final int collections_list=0x7f030001;
-        public static final int dynamically_create_view_element=0x7f030002;
-        public static final int home_screen=0x7f030003;
-        public static final int login_screen=0x7f030004;
-        public static final int networking=0x7f030005;
-        public static final int new_user=0x7f030006;
+        public static final int home_screen=0x7f030002;
+        public static final int login_screen=0x7f030003;
+        public static final int networking=0x7f030004;
+        public static final int new_user_screen=0x7f030005;
+        public static final int your_collection_list_screen=0x7f030006;
     }
     public static final class menu {
         public static final int home_screen=0x7f070000;

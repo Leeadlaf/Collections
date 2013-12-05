@@ -1,5 +1,5 @@
 /*
- * File: LoginActivity.java
+ * File: Login.java
  * Author: Lee Adlaf <adlaf@uab.edu>
  * Vers: 1.1.0 12/03/2013 lwa - modified code, both buttons working
  * Vers: 1.0.0 11/26/2013 lwa - initial coding
@@ -23,7 +23,7 @@ import android.widget.Button;
 //import android.view.View.OnClickListener;
 //import android.view.Menu;
 
-public class LoginActivity extends Activity implements View.OnClickListener {
+public class Login extends Activity implements View.OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +43,13 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 		public void onClick(View v) {
 			switch(v.getId()) {
 				case R.id.newUserButton:
-					Intent newUserScreen = new Intent (getApplicationContext(), NewUserActivity.class);
+					Intent newUserScreen = new Intent (getApplicationContext(), CreateNewUser.class);
 		   			
 		       	   //starting new activity - create new user screen
 		       	   startActivity(newUserScreen);
 		       	break;
 		        case R.id.loginButton:
-		       	   Intent loginScreen = new Intent (getApplicationContext(), HomeScreenActivity.class);
+		       	   Intent loginScreen = new Intent (getApplicationContext(), HomeScreen.class);
 		       	   
 		       	   //TBD - Check to see if the user / password is in the database!
 		   			

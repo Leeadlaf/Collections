@@ -1,4 +1,16 @@
+/*
+ * File: ViewYourCollectionList.java
+ * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.0.0 12/04/2013 lwa - initial coding
+ * 
+ * Credits:
+ */
+
 package ee433.uab.edu.collections;
+
+//Clean up and comment code (ongoing)
+//Should have a master class for viewing this and viewing others collections, technical debt?
+//
  
 import android.os.Bundle;
 import android.app.Activity;
@@ -11,12 +23,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
  
-public class GlobalClass extends Activity {
+public class ViewYourCollectionList extends Activity {
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dynamically_create_view_element);
+        setContentView(R.layout.your_collection_list_screen);
          
         final LinearLayout lm = (LinearLayout) findViewById(R.id.linearMain);
          
@@ -25,7 +37,8 @@ public class GlobalClass extends Activity {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
          
-        //Create four
+        //Create four items
+        // TBD - should poll / pull users collection information from the database
         for(int j=0;j<=4;j++)
         {  
             // Create LinearLayout
@@ -34,19 +47,19 @@ public class GlobalClass extends Activity {
              
             // Create TextView
             TextView product = new TextView(this);
-            product.setText(" Product"+j+"    ");
+            product.setText(" Collection "+j+"    ");
             ll.addView(product);
              
             // Create TextView
             TextView price = new TextView(this);
-            price.setText("  $"+j+"     ");
+            price.setText(" # of Items: "+j+"     ");
             ll.addView(price);
              
             // Create Button
             final Button btn = new Button(this);
                 // Give button an ID
                 btn.setId(j+1);
-                btn.setText("Add To Cart");
+                btn.setText("View");
                 // set the layoutParams on the button
                 btn.setLayoutParams(params);
                  

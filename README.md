@@ -9,7 +9,7 @@ _Currently refers to the java code within **Test Version 02**_
 
 _This is not a list of everything we need to do, rather it is a list of **specific TBD** from code already written:_
 
-##### LoginActivity.java
+##### HomeScreen.java
 
 *	Add Code to log off the user
 *	
@@ -19,12 +19,18 @@ _This is not a list of everything we need to do, rather it is a list of **specif
 *	Check to see if the user / password is in the database
 *	
 
-##### NewUserActivity.java
+##### CreateNewUser.java
 
 *	
 
 ##### viewCollectionsActivity.java
 
+*	replaced by ViewYourCollectionList.java? 
+*	
+
+##### ViewYourCollectionList.java
+
+*	should poll / pull users collection information from the database
 *	
 
 ##### more .java files...
