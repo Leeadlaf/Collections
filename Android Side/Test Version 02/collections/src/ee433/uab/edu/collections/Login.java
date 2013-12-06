@@ -1,6 +1,7 @@
 /*
  * File: Login.java
  * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.1.1 12/06/2013 jtb - added initial code for doLoginCheck method
  * Vers: 1.1.0 12/03/2013 lwa - modified code, both buttons working
  * Vers: 1.0.0 11/26/2013 lwa - initial coding
  * 
@@ -58,4 +59,17 @@ public class Login extends Activity implements View.OnClickListener {
 		        break;
 			}
 		}
+
+		/**
+    	 * Method for login verification 
+     	*
+     	* @param entry String
+     	* @return response Boolean (or return UserInfo object containing info from DB?)
+     	*/
+     	public void doLoginCheck(String entry) {
+     		query = this.entry;
+     		vc = new VerificationClient ();					//object that communicates with DB
+     		Boolean response = vc.isValidID(query);			//method that requires DB communication 
+     		return response;
+      	}
 	}
