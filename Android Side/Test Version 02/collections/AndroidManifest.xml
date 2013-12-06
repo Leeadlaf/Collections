@@ -41,7 +41,11 @@
         <activity
             android:name="ee433.uab.edu.collections.ViewOtherCollectionList"
             android:label=" Collections List:" >
-        </activity>                    
+        </activity>
+        <activity
+            android:name="ee433.uab.edu.collections.ViewCollection"
+            android:label="Collection Items:" >
+        </activity>                            
     </application>
 
 </manifest>

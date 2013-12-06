@@ -81,11 +81,20 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
 //         	            		//starting new activity - view Home Screen
 //         	            		startActivity(homeScreen);
 //         	        	   break; }
-                        Log.i("TAG", "index :" + index);
-                         
-                        Toast.makeText(getApplicationContext(),
-                                "Clicked Button Index :" + index,
-                                Toast.LENGTH_LONG).show();
+                    	
+                    	
+                    	//If Button inside Listview is clicked - TBD - How to pass information to the view collection screen?
+                    	Intent collectionScreen = new Intent (getApplicationContext(), ViewCollection.class); //TBD fix link
+         	   			
+         	            //starting new activity - view Home Screen
+         	            startActivity(collectionScreen);
+                    	
+//Using Toast                  	
+//                    	Log.i("TAG", "index :" + index);
+//                         
+//                        Toast.makeText(getApplicationContext(),
+//                                "Clicked Button Index :" + index,
+//                                Toast.LENGTH_LONG).show();
                          
                     }
                 });

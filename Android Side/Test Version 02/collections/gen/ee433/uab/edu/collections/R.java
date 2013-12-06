@@ -56,7 +56,8 @@ public final class R {
         public static final int networking=0x7f030004;
         public static final int new_user_screen=0x7f030005;
         public static final int other_collection_list_screen=0x7f030006;
-        public static final int your_collection_list_screen=0x7f030007;
+        public static final int view_collection_screen=0x7f030007;
+        public static final int your_collection_list_screen=0x7f030008;
     }
     public static final class menu {
         public static final int home_screen=0x7f070000;
@@ -65,6 +66,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int collection_name=0x7f050005;
         public static final int title_activity_home_screen=0x7f050003;
         public static final int title_activity_new_user=0x7f050004;
         public static final int version=0x7f050002;

@@ -97,6 +97,7 @@ Collection$
 ### 12/06/2013  ~  LWA  ~  Notes:
 
 *	'Home' and 'Other Collections' buttons linking properly on _View your Collections_ screen
+	*	'View' button also working - although not sure how to pass data to the next screen
 *	Viewing list of others collections working (in the abstract - still no 'real' collection data)
 *	Made some new screens
 *	**I did not change, but did comment out all non-functioning code (errors)** - so I could test my development.
