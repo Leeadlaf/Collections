@@ -71,10 +71,29 @@ Collection$
 *	Slowly adding and linking more screens - I have no idea how to display or populate data (collections, items, etc...)
 *	Created a list of suggested Technical Debt (in documentation folder)
 
-### 12/03/2013...  ~  KJS  ~  Notes:
+### 12/03/2013  ~  KJS  ~  Notes:
 
-*	Interacting with other apps: http://developer.android.com/training/basics/intents/index.html
-*	Location, in case we get this far: http://developer.android.com/training/building-userinfo.html
+*	Interacting with other apps: <http://developer.android.com/training/basics/intents/index.html>
+*	Location, in case we get this far: <http://developer.android.com/training/building-userinfo.html>
+
+### 12/04/2013  ~  LWA  ~  Notes:
+
+*	Starting to keep a list of TBD in the base folder (collections) **Readme.md** file.  This is stuff already marked as _TBD_ in the code, not a full list of everything needed to be done.  Please add / delete as you see fit
+*	Possibly useful Links:
+	*	_Connect android device to PHP Script_: <http://m-zeeshanarif.blogspot.com/2013/05/android-connecting-to-server-mysql.html>
+	*	_Building a Dynamic UI with Fragments_: <http://developer.android.com/training/basics/fragments/index.html>
+*	Testing dynamically populated List View (via _Add Item_ button).  Code from: <http://androidexample.com/Dynamically_Create_View_Elements__-_Android_Example/index.php?view=article_discription&aid=115&aaid=137>
+
+### 12/05/2013  ~  LWA  ~  Notes:
+
+*	Dynamically populated list view seems to be something that will work for us (click 'View Collections' in Test Version 02) - although there is a lot of java code that needs to be written on the back end once we get information out of the database.
+*	Different layouts can be put on the same screen - ie. **ViewYourCollectionList.java** & its associated layout, **your_collection_list_screen** 
+*	Creating an activity specifically to view your collections - and another to view others collections (forgetting about the tab display for now)  This *should* be done with a view collections master class then subclasses for displaying our or their collections.  
+*	Did a lot of refactoring to make files / titles more clear
+*	**Android -> Database** random research (not sure if it's any good):
+	*	<http://androiddevelopement.blogspot.com/2011/09/connecting-to-remote-mysql-database.html>
+	*	<http://codeoncloud.blogspot.com/2012/03/android-mysql-client.html>
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On

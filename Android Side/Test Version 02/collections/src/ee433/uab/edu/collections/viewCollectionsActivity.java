@@ -9,9 +9,10 @@
 
 package ee433.uab.edu.collections;
 
-//TBD - Clean up and comment code (ongoing)
-//    - view collections?
-//    - 
+// Clean up and comment code (ongoing)
+// view collections - Dynamic Information (fragments?)
+// TBD - replaced by ViewYourCollectionList.java? 
+// 
 
 import android.app.Activity;
 import android.content.Intent;
@@ -37,7 +38,7 @@ public class viewCollectionsActivity extends Activity implements View.OnClickLis
 		public void onClick(View v) {
 			switch(v.getId()) {
 				case R.id.goHomeButton:
-					Intent homeScreen = new Intent (getApplicationContext(), HomeScreenActivity.class);
+					Intent homeScreen = new Intent (getApplicationContext(), HomeScreen.class);
 				   			
 		       	   //starting new activity - go Home
 		       	   startActivity(homeScreen);
