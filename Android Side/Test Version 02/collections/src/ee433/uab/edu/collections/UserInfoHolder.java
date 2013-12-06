@@ -117,4 +117,8 @@ public class UserInfoHolder {
 //     		}
 //			return UserInfoHolder;
 //      	}
+
+
+//		String getName(){}
+//		public String getOwner(){}
 	}

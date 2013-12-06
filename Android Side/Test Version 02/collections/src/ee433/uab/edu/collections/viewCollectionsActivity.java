@@ -1,6 +1,7 @@
 /*
  * File: viewCollectionsActivity.java
  * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.0.2 12/06/2013 jtb - initial coding for info extractor to populate display fields
  * Vers: 1.0.1 12/03/2013 lwa - fixed 'home' button
  * Vers: 1.0.0 12/03/2013 lwa - initial coding
  * 
@@ -27,6 +28,12 @@ public class viewCollectionsActivity extends Activity implements View.OnClickLis
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.collections_list);
 		
+
+		//By jbox: put InfoExtractor here to extract info from UserInfoHolder and populate display fields.
+		//	InfoExtractor extractor= new ViewCollectionInfoExtractor();
+		//	extractor.extractInfo(UserInfoHolder);						// method that puts appropriate info in appropriate field.
+																		// def in ViewCollectionInfoExtractor.java
+
 		//Defining buttons
 		Button goHomeButton = (Button) findViewById (R.id.goHomeButton);
 				
@@ -46,3 +53,8 @@ public class viewCollectionsActivity extends Activity implements View.OnClickLis
 			}
 		}
 	}
+
+
+
+
+	
