@@ -9,6 +9,11 @@ _This is not a list of final technical debt, rather it is a list of **specific s
 
 *	Not Using Tabs
 *	Limiting number of collections / items displayed (to help with screen issues)
+	*	Number to limit?
+*	Limit amount of information displayed about an object
+	*	What won't be displayed?
+*	No thumbnails on collection list
+*	No thumbnails on item list
 
 ### TBD: _(ie. stuff we need to address)_
 

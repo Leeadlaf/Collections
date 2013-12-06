@@ -1,21 +1,17 @@
 /*
- * File: ViewYourCollectionList.java
+ * File: ViewOtherCollectionList.java
  * Author: Lee Adlaf <adlaf@uab.edu>
- * Vers: 1.0.0 12/04/2013 lwa - initial coding
+ * Vers: 1.0.0 12/06/2013 lwa - initial coding
  * 
  * Credits:
  */
 
 package ee433.uab.edu.collections;
 
-//Clean up and comment code (ongoing)
-//Should have a master class for viewing this and viewing others collections, technical debt?
-//
- 
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.ActionBar.LayoutParams;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -23,17 +19,21 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
- 
-public class ViewYourCollectionList extends Activity implements View.OnClickListener {
- 
+
+//Clean up and comment code (ongoing)
+//
+//
+
+public class ViewOtherCollectionList extends Activity implements View.OnClickListener {
+	 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.your_collection_list_screen);
+        setContentView(R.layout.other_collection_list_screen);
         
         //Defining buttons
       	Button homeButton = (Button) findViewById (R.id.homeButton);
-        Button othersCollectionsButtons = (Button) findViewById (R.id.othersCollectionsButtons);
+        Button yourCollectionsButtons = (Button) findViewById (R.id.yourCollectionsButtons);
         
         final LinearLayout lm = (LinearLayout) findViewById(R.id.linearMain);
          
@@ -68,7 +68,7 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
                 // set the layoutParams on the button
                 btn.setLayoutParams(params);
                 homeButton.setOnClickListener(this);
-                othersCollectionsButtons.setOnClickListener(this);
+                yourCollectionsButtons.setOnClickListener(this);
                 
              final int index = j;
                 // Set click listener for button
@@ -106,11 +106,11 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
      		//starting new activity - view Home Screen
      		startActivity(homeScreen);
  	   break; 
-     	case R.id.othersCollectionsButtons:
-     		Intent othersCollections = new Intent (getApplicationContext(), ViewOtherCollectionList.class);
+     	case R.id.yourCollectionsButtons:
+     		Intent yourCollections = new Intent (getApplicationContext(), ViewYourCollectionList.class);
 		
      		//starting new activity - view Home Screen
-     		startActivity(othersCollections);
+     		startActivity(yourCollections);
  	   break; }
 		// TODO Auto-generated method stub
 		

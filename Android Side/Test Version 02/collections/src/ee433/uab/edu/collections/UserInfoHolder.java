@@ -38,82 +38,83 @@ public class UserInfoHolder {
 				cons: 	lots of methods to be coded, have to use right specific call in other classes that need method implementation.
 		*/
 
-
-	static final int HOMESCREEN_NUM=1;
-	static final int VIEWCOLLECTIONSCREEN_NUM=2;
-	static final int ADDCOLLECTIONSCREEN_NUM=3;
-	static final int NETWORKINGSCREEN_NUM=4
-
-	//instance variables: {by screen type: 1)Login, 2)Home, 3)Add}	**is Login and Home needed?
-		//General
-				int screenType;
-				int collectionNumber;
-				String collectionName;
-
-		// Login
-				private Boolean response;
-				private String entry;
-
-		// Home 
-				//favorites?
-
-		// Add
-
-
-		// View My Collections
-				
-				Collection myCollection[1];	//default to 1 collection
-
-
-
-		// Networking
-				//
-
-
-
-		/* Constructors: Default and User Defined "query"	*/
-		//Default Constructor
-		public UserInfoHolder(){
-			screenType = 0; 
-
-
-
-			query = "<blank>";
-			response = False; 				
-
-
-		//User Defined Constructor
-		public UserInfoHolder(int screenType, int collectionNum, String collectionName){
-			screenType = this.screenType;				
-		collectionNum=this.collectionNum;
-		collectionName=this.collectionName
-	}	
-
-	   /**
-        * Method 
-     	* @param 
-     	* @return 
-     	*/
-     	private UserInfoHolder Boolean getUserInfo(UserID userID) {
-     		screenType = this.screenType;
-
-     		//homescreen info get
-     		if(screenType== HOMESCREEN_NUM){
-
-
-     		}
-     		else if(screenType ==VIEWCOLLECTIONSCREEN_NUM){
-     			numberOfCollections = this.getNumberOfCollections();
-
-     		}
-     		else if(screenType ==ADDCOLLECTIONSCREEN_NUM){
-
-
-     		}
-     		else if(screenType ==NETWORKINGSCREEN_NUM){
-
-
-     		}
-			return UserInfoHolder;
-      	}
+//---Code commented out to make overall program functional (so i can test the rest of the code - LWA)---
+//	
+//	static final int HOMESCREEN_NUM=1;
+//	static final int VIEWCOLLECTIONSCREEN_NUM=2;
+//	static final int ADDCOLLECTIONSCREEN_NUM=3;
+//	static final int NETWORKINGSCREEN_NUM=4;
+//
+//	//instance variables: {by screen type: 1)Login, 2)Home, 3)Add}	**is Login and Home needed?
+//		//General
+//				int screenType;
+//				int collectionNumber;
+//				String collectionName;
+//
+//		// Login
+//				private Boolean response;
+//				private String entry;
+//
+//		// Home 
+//				//favorites?
+//
+//		// Add
+//
+//
+//		// View My Collections
+//				
+//				Collection myCollection[1];	//default to 1 collection
+//
+//
+//
+//		// Networking
+//				//
+//
+//
+//
+//		/* Constructors: Default and User Defined "query"	*/
+//		//Default Constructor
+//		public UserInfoHolder(){
+//			screenType = 0; 
+//
+//
+//
+//			query = "<blank>";
+//			response = False; 				
+//
+//
+//		//User Defined Constructor
+//		public UserInfoHolder(int screenType, int collectionNum, String collectionName){
+//			screenType = this.screenType;				
+//		collectionNum=this.collectionNum;
+//		collectionName=this.collectionName
+//	}	
+//
+//	   /**
+//        * Method 
+//     	* @param 
+//     	* @return 
+//     	*/
+//     	private UserInfoHolder Boolean getUserInfo(UserID userID) {
+//     		screenType = this.screenType;
+//
+//     		//homescreen info get
+//     		if(screenType== HOMESCREEN_NUM){
+//
+//
+//     		}
+//     		else if(screenType ==VIEWCOLLECTIONSCREEN_NUM){
+//     			numberOfCollections = this.getNumberOfCollections();
+//
+//     		}
+//     		else if(screenType ==ADDCOLLECTIONSCREEN_NUM){
+//
+//
+//     		}
+//     		else if(screenType ==NETWORKINGSCREEN_NUM){
+//
+//
+//     		}
+//			return UserInfoHolder;
+//      	}
 	}

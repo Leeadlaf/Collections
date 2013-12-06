@@ -60,16 +60,18 @@ public class Login extends Activity implements View.OnClickListener {
 			}
 		}
 
-		/**
-    	 * Method for login verification 
-     	*
-     	* @param entry String
-     	* @return response Boolean (or return UserInfo object containing info from DB?)
-     	*/
-     	public void doLoginCheck(String entry) {
-     		query = this.entry;
-     		vc = new VerificationClient ();					//object that communicates with DB
-     		Boolean response = vc.isValidID(query);			//method that requires DB communication 
-     		return response;
-      	}
+//---Code commented out to make overall program functional (so i can test the rest of the code - LWA)---
+//	
+//		/**
+//    	 * Method for login verification 
+//     	*
+//     	* @param entry String
+//     	* @return response Boolean (or return UserInfo object containing info from DB?)
+//     	*/
+//     	public void doLoginCheck(String entry) {
+//     		query = this.entry;
+//     		vc = new VerificationClient ();					//object that communicates with DB
+//     		Boolean response = vc.isValidID(query);			//method that requires DB communication 
+//     		return response;
+//      	}
 	}

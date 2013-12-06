@@ -94,6 +94,13 @@ Collection$
 	*	<http://androiddevelopement.blogspot.com/2011/09/connecting-to-remote-mysql-database.html>
 	*	<http://codeoncloud.blogspot.com/2012/03/android-mysql-client.html>
 
+### 12/06/2013  ~  LWA  ~  Notes:
+
+*	'Home' and 'Other Collections' buttons linking properly on _View your Collections_ screen
+*	Viewing list of others collections working (in the abstract - still no 'real' collection data)
+*	Made some new screens
+*	**I did not change, but did comment out all non-functioning code (errors)** - so I could test my development.
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On
