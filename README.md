@@ -37,5 +37,13 @@ _This is not a list of everything we need to do, rather it is a list of **specif
 
 *	should poll / pull users collection information from the database
 
+##### Item.java
+
+*	test the editable variable by testing the set methods with editable==True and editable == False
+
+##### Collection.java 
+
+*	edit code to match current UML Class diagram
+
 ##### more .java files...
 
