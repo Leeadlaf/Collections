@@ -85,9 +85,9 @@ public class UserInfoHolder {
 //
 //		//User Defined Constructor
 //		public UserInfoHolder(int screenType, int collectionNum, String collectionName){
-//			screenType = this.screenType;				
-//		collectionNum=this.collectionNum;
-//		collectionName=this.collectionName
+//			this.screenType=screenType;				
+//			this.collectionNum=collectionNum;
+//			this.collectionName=collectionName;
 //	}	
 //
 //	   /**
@@ -104,7 +104,7 @@ public class UserInfoHolder {
 //
 //     		}
 //     		else if(screenType ==VIEWCOLLECTIONSCREEN_NUM){
-//     			numberOfCollections = this.getNumberOfCollections();
+//     			this.numberOfCollections = getNumberOfCollections();
 //
 //     		}
 //     		else if(screenType ==ADDCOLLECTIONSCREEN_NUM){
