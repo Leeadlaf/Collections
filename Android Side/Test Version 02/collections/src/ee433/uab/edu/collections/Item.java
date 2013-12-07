@@ -3,10 +3,20 @@
  * Desc:	A collectible Item that part of a Collection. Class belong to Collection$ 
  * 			Android application
  * Date:	11/18/2013
- * Vers:	1.0.0 original - kjs
+ * Vers:	1.0.1 12/07/2013 jtb - added editable var that restricts the ability to set values without permission.
+ * Vers:	1.0.0 11/18/2013 kjs -original coding
  */
 
 package com.example.collections;
+
+
+// Q: editable variable- default constructors :True or False	
+// A: 				{date issue addressed: 12/dd/13	}
+// Q: check set methods: does program need to use method to get editable value?	
+// A: 				{date issue addressed: 12/dd/13	}
+// Q: need to test editable variable by testing the set methods
+// A: 				{date issue addressed: 12/dd/13	} 
+
 
 public class Item {
 
@@ -16,17 +26,30 @@ public class Item {
 	private String condition;
 	private Boolean sharedView;
 	private double price;
-	//private Image ItemPicture;
-
-
+	//private Image itemPicture;
+	private Boolean editable;			//if this is true, then set methods can be accessed.
+										// (Does not apply to setEditable method, obviously)
+										//** should ifs in set methods use this.getEditable?	
+	//Creates a default item. 
 	public Item(){
-		//Create default items. 
+		this.name = "<blank>";
+		this.description= "<blank>";
+		this.dateAdded = "mm/dd/yyy";
+		this.condition = "<blank>";
+		this.sharedview = True;
+	 	this.price = 0.0;
+
+	 	this.editable = True; 			//want to be able to set things
 	}
-	
-	public Item(String Name, String Description, String Condition, Boolean SharedView, double Price){
-		//Creates Item object with input parameters. DateAdded is not an input parameter.
-		
-		//Set properties of Item object using parameters.
+	//Creates Item object with input parameters. DateAdded is not an input parameter.
+	public Item(String name, String description, String condition, Boolean sharedview, double price){
+		this.name= name;
+		this.description = description;
+		this.condition = condition;
+		this.sharedview = sharedview;
+	 	this.price = price;
+	 	
+	 	this.editable = False; 			// already set item values? -- 
 	}
 	
 	public String getName() {
@@ -34,7 +57,11 @@ public class Item {
 	}
 	
 	public void setName(String name) {
-		this.name = name;
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.name = name;
+		}
+		
 	}
 	
 	public String getDescription() {
@@ -42,7 +69,11 @@ public class Item {
 	}
 	
 	public void setDescription(String description) {
-		this.description = description;
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.description = description;
+		}
+		
 	}
 	
 	public String getDateAdded() {
@@ -50,7 +81,11 @@ public class Item {
 	}
 	
 	public void setDateAdded(String dateAdded) {
-		this.dateAdded = dateAdded;
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.dateAdded = dateAdded;
+		}
+		
 	}
 	
 	public String getCondition() {
@@ -58,7 +93,10 @@ public class Item {
 	}
 	
 	public void setCondition(String condition) {
-		this.condition = condition;
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.condition = condition;
+		}
 	}
 	
 	public Boolean getSharedView() {
@@ -66,14 +104,30 @@ public class Item {
 	}
 	
 	public void setSharedView(Boolean sharedView) {
-		this.sharedView = sharedView;
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.sharedView = sharedView;
+		}
 	}
 	
 	public double getPrice() {
 		return price;
 	}
 	public void setPrice(double price) {
-		this.price = price;
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.price = price;
+		}
+		
 	}
-	
+
+
+
+
+	public Boolean getEditable() {
+		return editable;
+	}
+	public void setEditable(Boolean editable) {
+		this.editable = editable;
+	}
 }
