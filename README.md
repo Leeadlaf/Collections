@@ -47,3 +47,20 @@ _This is not a list of everything we need to do, rather it is a list of **specif
 
 ##### more .java files...
 
+
+
+##### Workload Commitment:
+_**from Jeremy Box** I know everyone has finals studying to get through this week. Good Luck everyone of you!!!
+Just wanted to publish my anticipated workload this week for managing my time working on this project. I essentially 
+will start working on this Tuesday and need to be finished by noon Wed._
+
+* Sunday - will be studying for 318 exam monday and hope to work some on EE433 
+		 - EE433: 25% focus ;  1-2hrs
+* Monday -  will be studying for a 318 exam at 430pm 						   
+		 - EE433: 0% focus ;  0hrs
+* Tuesday- will dedicate all day to this program {hopefully complete backbone}
+		 - EE433: 100% focus;  12-20 hrs
+* Wed    - have to start looking at EE351 for Thursday {crucial to finish up my contributions}
+		 - EE433: 25-33% focus;  3-5hrs
+* Thurs  - will be either taking one of 3 exams or studying for last exam after our presentation
+		 - EE433: 5-15% focus;  1 hr
