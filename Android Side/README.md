@@ -102,6 +102,10 @@ Collection$
 *	Made some new screens
 *	**I did not change, but did comment out all non-functioning code (errors)** - so I could test my development.
 
+### 12/07/2013 ~  KJS ~ Notes:
+
+*	Information on List View and Image URLs: http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On
