@@ -6,7 +6,7 @@
  * Vers:	1.0.0  kjs - original coding 
  */
 
-package com.example.collections;
+package ee433.uab.edu.collections;
 
 import java.util.ArrayList;
 

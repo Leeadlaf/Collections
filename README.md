@@ -64,3 +64,13 @@ will start working on this Tuesday and need to be finished by noon Wed._
 		 - EE433: 25-33% focus;  3-5hrs
 * Thurs  - will be either taking one of 3 exams or studying for last exam after our presentation
 		 - EE433: 5-15% focus;  1 hr
+
+**from Lee Adlaf**
+
+*	Monday - Work 9-5.
+	*	EE433 off and on during the day.  Have to study for another final in the evening.
+*	Tuesday - Taking a final in the AM, giving a final in the PM, working in-between.
+	*	EE433 in the evening.  Will finish the rest of the screens / linking / etc.  Hopefully Jeremy / Kuni will have some information for me to display by then?
+*	Wednesday - Work 9-5. (We should probebly meet as a group sometime Wednesday)
+	*	EE433 in the afternoon / evening.  
+*	Thursday - Work 9-5.
