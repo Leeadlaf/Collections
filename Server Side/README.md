@@ -27,4 +27,4 @@ Collection$
 	* http://ormlite.com/data_types.shtml
 	* http://stackoverflow.com/questions/17715449/how-to-get-data-from-web-service-in-android
 *	Considering using ORMLite to link Collection and Items, similar to HW3. If it does not work, highly consider using a "Collections" and "UserID" property for items.
-
+* Uploaded CollectionDatabaseTest project. Created to demonstrate Java connectivity to MySQL database. Only works when MySQL is installed locally; currently working on remote connection issue.
