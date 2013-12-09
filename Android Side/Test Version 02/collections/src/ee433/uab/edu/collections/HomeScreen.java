@@ -75,3 +75,12 @@ public class HomeScreen extends Activity implements View.OnClickListener {
 			}
 		}
 	}
+
+
+
+
+	/*Method List : for UML diagram*/
+	//doAddScreen();
+	//doViewYourCollectionList();
+	//doNetworkingScreen();
+	//doLogOut();
