@@ -16,20 +16,30 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.ActionBar.LayoutParams;
 import android.content.Intent;
-import android.util.Log;
+//import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+//import android.widget.Toast;
  
 public class ViewYourCollectionList extends Activity implements View.OnClickListener {
  
+	
+	// Initializing variables
+//	View userName;
+//	EditText userName;	
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.your_collection_list_screen);
+        
+//		//Defining text
+//		userName = findViewById(R.id.userName);
+//		userName = (EditText) findViewById(R.id.userName);        
         
         //Defining buttons
       	Button homeButton = (Button) findViewById (R.id.homeButton);
@@ -111,7 +121,14 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
 	    switch(v.getId()) {
      	case R.id.homeButton:
      		Intent homeScreen = new Intent (getApplicationContext(), HomeScreen.class);
-		
+
+//     		userName = findViewById(R.id.userName);
+//     		homeScreen.putExtra("name", userName.getText().toString());     
+//     		homeScreen.putExtra("name", userName.toString());     		
+//     		homeScreen.putExtra("name", userName.getText().toString());
+//     		homeScreen.putExtra(userName.toString());
+//     		homeScreen.putExtra(userName, name);     		
+     		
      		//starting new activity - view Home Screen
      		startActivity(homeScreen);
  	   break; 

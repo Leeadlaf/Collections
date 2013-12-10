@@ -56,4 +56,33 @@
     android:layout_alignLeft="@+id/networking"
     android:text="Log Out" />
 
+<TextView
+    android:id="@+id/userName"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/textView1"
+    android:layout_below="@+id/textView2"
+    android:layout_margin="15dip"
+    android:layout_marginTop="14dp"
+    android:textSize="20dip" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/userName"
+    android:layout_below="@+id/networkingButton"
+    android:layout_marginTop="21dp"
+    android:text="Logged on as:"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/userName2"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/userName"
+    android:layout_below="@+id/userName"
+    android:layout_margin="15dip"
+    android:textSize="20dip" />
+
 </RelativeLayout>

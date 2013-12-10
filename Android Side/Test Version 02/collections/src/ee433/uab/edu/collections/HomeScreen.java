@@ -15,19 +15,39 @@ package ee433.uab.edu.collections;
 // Fix indents??
 // 
 
+//import com.example.androidswitchviews.R;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.app.Activity;
 import android.content.Intent;
 //import android.view.Menu;
 
 public class HomeScreen extends Activity implements View.OnClickListener {
 
+	
+	//TextView display;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_screen);
+		
+        TextView userName = (TextView) findViewById(R.id.userName);
+        //TextView userName2 = (TextView) findViewById(R.id.userPassword);        
+        //TextView userName2 = (TextView)findViewById(R.id.userName);
+        
+        
+        Intent i = getIntent();
+        // Receiving the Data
+        String name = i.getStringExtra("name");
+        //String pass = i.getStringExtra("pass");        
+        
+        // Displaying Received data
+        userName.setText(name);
+        //userName2.setText(name);
 		
 		//Defining buttons
 		Button viewCollectionsButton = (Button) findViewById (R.id.viewCollectionsButton);
@@ -42,6 +62,8 @@ public class HomeScreen extends Activity implements View.OnClickListener {
 		networkingButton.setOnClickListener(this);
 		logOutButton.setOnClickListener(this);}
 		
+	    //display.setText("Entered name is : "+R.id.userName);
+	
 	    //If a button is clicked
 		@Override
 		public void onClick(View v) {
