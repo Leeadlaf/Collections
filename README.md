@@ -74,3 +74,20 @@ will start working on this Tuesday and need to be finished by noon Wed._
 *	Wednesday - Work 9-5. (We should probebly meet as a group sometime Wednesday)
 	*	EE433 in the afternoon / evening.  
 *	Thursday - Work 9-5.
+
+_**from Kuni Scissum
+*	Monday - will be working on project and studying for EE426 final.
+	* 	Work - 9:00AM - 12:00PM
+	*	EE433 Project - 1:00PM - 5:00 PM
+	*	EE426 Final Study - 5:00PM - 9:00PM
+	*	EE433 Project - 10:00PM - 
+*	Tuesday - final in the am then all EE433 for the rest of the day 
+	*	EE426 Final - 8:00AM-10:15AM 
+	*	EE433 - 11:00AM-
+*	Wednesday - work from 8:00AM-12:00PM (hopefully)
+	*	EE433 - 1:00PM-6:00PM
+	*	Work - 7PM-8:30PM
+	*	EE433 - 9:00PM - 
+*	Thursday
+
+
