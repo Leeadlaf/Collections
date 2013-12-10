@@ -106,6 +106,11 @@ Collection$
 
 *	Information on List View and Image URLs: http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/
 
+### 12/06/2013  ~  LWA  ~  Notes:
+
+*	Added more screens.
+*	Working on populating dynamic text fields & passing information to another screen via a button click
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On

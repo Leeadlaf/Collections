@@ -31,7 +31,7 @@ _This is not a list of everything we need to do, rather it is a list of **specif
 
 ##### viewCollectionsActivity.java
 
-*	replaced by ViewYourCollectionList.java? 
+*	replaced by ViewYourCollectionList.java? **_DELETED 12/10/13_** _lwa_
 
 ##### ViewYourCollectionList.java
 
@@ -44,6 +44,14 @@ _This is not a list of everything we need to do, rather it is a list of **specif
 ##### Collection.java 
 
 *	edit code to match current UML Class diagram
+
+##### ViewItem.java
+
+*	write code / design screen to do view specific item
+
+##### AddItem.java
+
+*	write code / design screen to do add item
 
 ##### more .java files...
 

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/version" />
+
+<Button
+    android:id="@+id/goHomeButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textView1"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="24dp"
+    android:text="Home" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/goHomeButton"
+    android:text="Large Text"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<Button
+    android:id="@+id/itemResearchButton"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/textView2"
+    android:layout_below="@+id/textView2"
+    android:text="Research" />
+
+<Button
+    android:id="@+id/viewImagesButton"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/itemResearchButton"
+    android:layout_alignBottom="@+id/itemResearchButton"
+    android:layout_toLeftOf="@+id/textView2"
+    android:text="Images" />
+
+<Button
+    android:id="@+id/removeItemButtonbutton1"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView2"
+    android:layout_marginLeft="19dp"
+    android:layout_toRightOf="@+id/textView2"
+    android:text="REMOVE" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/viewImagesButton"
+    android:layout_below="@+id/itemResearchButton"
+    android:layout_marginTop="16dp"
+    android:text="Medium Text"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView3"
+    android:layout_below="@+id/textView3"
+    android:layout_marginTop="16dp"
+    android:text="Medium Text"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView4"
+    android:layout_below="@+id/textView4"
+    android:layout_marginTop="20dp"
+    android:text="Medium Text"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView5"
+    android:layout_centerVertical="true"
+    android:text="Medium Text"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView6"
+    android:layout_marginTop="17dp"
+    android:layout_toLeftOf="@+id/textView2"
+    android:text="Small Text"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

@@ -31,10 +31,6 @@
             android:label="@string/title_activity_new_user" >
         </activity>
         <activity
-            android:name="ee433.uab.edu.collections.viewCollectionsActivity"
-            android:label="Collections List" >
-        </activity>        
-        <activity
             android:name="ee433.uab.edu.collections.ViewYourCollectionList"
             android:label=" Collections List:" >
         </activity>
@@ -44,8 +40,17 @@
         </activity>
         <activity
             android:name="ee433.uab.edu.collections.ViewCollection"
-            android:label="Collection Items:" >
-        </activity>                            
+            android:label=" Collection Items:" >
+        </activity>            
+        <activity
+            android:name="ee433.uab.edu.collections.AddItem"
+            android:label=" Add an Item:" >
+        </activity>        
+        <activity
+            android:name="ee433.uab.edu.collections.ViewItem"
+            android:label=" Item Details:" >
+        </activity>  
+        
     </application>
 
 </manifest>
