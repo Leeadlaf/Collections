@@ -1,6 +1,7 @@
 /*
  * File: HomeScreen.java
  * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.1.0 12/11/2013 lwa - using shared preferences to store the current username
  * Vers: 1.0.5 12/03/2013 lwa - cleaned up code, fixed buttons
  * Vers: 1.0.1 12/03/2013 lwa - modified code, more buttons working
  * Vers: 1.0.0 11/26/2013 lwa - initial coding
@@ -15,39 +16,41 @@ package ee433.uab.edu.collections;
 // Fix indents??
 // 
 
-//import com.example.androidswitchviews.R;
-
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 //import android.view.Menu;
 
 public class HomeScreen extends Activity implements View.OnClickListener {
 
-	
-	//TextView display;
+	// Define shared preferences
+	SharedPreferences namePreferences;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_screen);
 		
-        TextView userName = (TextView) findViewById(R.id.userName);
-        //TextView userName2 = (TextView) findViewById(R.id.userPassword);        
-        //TextView userName2 = (TextView)findViewById(R.id.userName);
+		// Get the app's shared preferences
+		namePreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		
+		// pulling the saved user name out of preferences
+		String savedUserName = namePreferences.getString("userName", "");
+		
+		//Tying name to text field
+		TextView userName = (TextView) findViewById(R.id.userName);
         
+        // Receiving the Data from previous screen - NO LONGER NEEDED WITH SHARED PREFERENCES.  do not delete        
+        //Intent i = getIntent();
+        //String name = i.getStringExtra("name");
         
-        Intent i = getIntent();
-        // Receiving the Data
-        String name = i.getStringExtra("name");
-        //String pass = i.getStringExtra("pass");        
-        
-        // Displaying Received data
-        userName.setText(name);
-        //userName2.setText(name);
+        // Displaying Received data in text field
+        userName.setText(savedUserName);
 		
 		//Defining buttons
 		Button viewCollectionsButton = (Button) findViewById (R.id.viewCollectionsButton);

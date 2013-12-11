@@ -1,7 +1,8 @@
 /*
  * File: Login.java
  * Author: Lee Adlaf <adlaf@uab.edu>
- * Vers: 1.1.2 12/06.2013 lwa - declaring text input - passing username to home screen
+ * Vers: 1.1.5 12/11/2013 lwa - using shared preferences to store the current username
+ * Vers: 1.1.2 12/06/2013 lwa - declaring text input - passing username to home screen
  * Vers: 1.1.1 12/06/2013 jtb - added initial code for doLoginCheck and populateUserInfoHolder method
  * Vers: 1.1.0 12/03/2013 lwa - modified code, both buttons working
  * Vers: 1.0.0 11/26/2013 lwa - initial coding
@@ -17,8 +18,10 @@ package ee433.uab.edu.collections;
 // 
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,8 +34,7 @@ public class Login extends Activity implements View.OnClickListener {
 	// Initializing variables
 	EditText userName;
 	EditText userPassword;
-	
-	//public String username;
+	SharedPreferences namePreferences;
 	
 	
 	@Override
@@ -40,6 +42,9 @@ public class Login extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login_screen);
 	
+		// Get the app's shared preferences
+		namePreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		
 		//Defining text
 		userName = (EditText) findViewById(R.id.userName);
 		userPassword = (EditText) findViewById(R.id.userPassword);
@@ -55,6 +60,12 @@ public class Login extends Activity implements View.OnClickListener {
 		//If a button is clicked
 		@Override
 		public void onClick(View v) {
+			
+			//saving username into shared preferences
+		    SharedPreferences.Editor nameEditor = namePreferences.edit();
+		    nameEditor.putString("userName", userName.getText().toString());
+		    nameEditor.commit();
+						
 			switch(v.getId()) {
 				case R.id.newUserButton:
 					Intent newUserScreen = new Intent (getApplicationContext(), CreateNewUser.class);
@@ -65,14 +76,9 @@ public class Login extends Activity implements View.OnClickListener {
 		        case R.id.loginButton:
 		       	   Intent homeScreen = new Intent (getApplicationContext(), HomeScreen.class);
 		       	   
-		       	   
-		       	   //String pass = userPassword.getText().toString();
-		       	   homeScreen.putExtra("name", userName.getText().toString());
-		       	   
-//		       	   String userID = userName.getText().toString() ;
-//		       	   homeScreen.putExtra(userID, userName.getText().toString());
-		       	   //homeScreen.putExtra("password", userPassword.getText().toString());
-		       	   //homeScreen.p
+		           //Sending the Data to next screen - NO LONGER NEEDED WITH SHARED PREFERENCES.  do not delete 
+		       	   //homeScreen.putExtra("name", userName.getText().toString());
+
 		       	   //TBD - Check to see if the user / password is in the database!
 		   			
 		       	   //starting new activity - login screen
