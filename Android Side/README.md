@@ -106,11 +106,16 @@ Collection$
 
 *	Information on List View and Image URLs: http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/
 
-### 12/06/2013  ~  LWA  ~  Notes:
+### 12/10/2013  ~  LWA  ~  Notes:
 
 *	Added more screens.
 *	Working on populating dynamic text fields & passing information to another screen via a button click
 	*	I can pass a string (for example a user name - see Login.java & HomeScreen.java) to the next page (via 'intents') but I cannot store the string in any meaningful way.  I assume this is what we're using the database for - to store all information.  I'll need to know how to 'call' the database code to return what I want (item information, collection information, etc)?
+
+### 12/11/2013  ~  LWA  ~  Notes:
+
+*	Using shared preferences to store information for the current session (like username)
+*
 
 ### Next Date...  ~  initials  ~  Notes:
 

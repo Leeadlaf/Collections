@@ -76,13 +76,4 @@
     android:text="Logged on as:"
     android:textAppearance="?android:attr/textAppearanceMedium" />
 
-<TextView
-    android:id="@+id/userName2"
-    android:layout_width="150dp"
-    android:layout_height="wrap_content"
-    android:layout_alignLeft="@+id/userName"
-    android:layout_below="@+id/userName"
-    android:layout_margin="15dip"
-    android:textSize="20dip" />
-
 </RelativeLayout>
