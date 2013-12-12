@@ -33,4 +33,26 @@ public class ViewItem extends Activity {
 
     }
 
+//make this class implement InfoExtractor
+/**
+ * Method for Information extraction- for this screen extracts info on a specific item
+ *
+ * @param Item
+ * @return void
+ * Pre-condition: must have the Item object that was specified on click.
+ * Post condition: will populate the information display fields with the info from the Item.
+ *
+ *TBD: need to find out what identifier for each text/display field are and set them to the appropriate .get
+ */
+/*
+
+/*
+	@Override
+	public void extractInfo(Item selectedItem){}
+		displayfield1 = selectedItem.getName();
+		displayfield2 = selectedItem.getDescription();
+		displayfield3 = selectedItem.getDateAdded();
+		displayfield4 = selectedItem.getCondition();
+		displayfield5 = selectedItem.getForSaleStatus();
+*/
 }

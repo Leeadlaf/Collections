@@ -19,7 +19,7 @@ public class Collection {
 	private String name;					
 	private String category;
 	private int numberOfItems;
-	private ArrayList<Item> itemCollection;
+	private ArrayList<Item> itemList;
 	private Boolean viewable;				
 
 
@@ -28,7 +28,7 @@ public class Collection {
 		// Constructor creates empty ArrayList of Item objects
 		user = "<blank>";
 		category = "<blank>";
-		itemCollection = new ArrayList<Item>(); 
+		itemList = new ArrayList<Item>(); 
 	}
 
 
@@ -37,8 +37,8 @@ public class Collection {
 		// Constructor creates empty ArrayList with user and category of collection
 		this.user = user;
 		this.category = category;
-		itemCollection = new ArrayList<Item>();
-		itemCollection = getItemsFromDB(user);
+		itemList = new ArrayList<Item>();
+		itemList = getItemsFromDB(user);
 	}
 	
 	public ArrayList<Item> getItemsFromJSON(user){
@@ -59,25 +59,13 @@ public class Collection {
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 	public void addItem(Item item){
-		//Adds itemCollection to Collection
-		itemCollection.add(item);
+		//Adds itemList to Collection
+		itemList.add(item);
 	}
 	public void removeItem(int index){
 		//Removes item from Collection using index
-		itemCollection.remove(index);
+		itemList.remove(index);
 	}
 	
 	public void editItem(){
@@ -94,5 +82,65 @@ public class Collection {
 		//If FALSE, set to be invisible to other users.
 		this.viewable = state;
 	}
+
+//get/set methods:
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.name = name;
+		}
+		
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+	
+	public void setCategory(String category) {
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.category = category;
+		}
+	}
+	
+
+
+	public String getNumberOfItems() {
+		return numberOfItems;
+	}
+	
+	public void setNumberOfItems(String numberOfItems) {
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.numberOfItems = numberOfItems;
+		}	
+	}
+	
+	public ArrayList<Item> getItemList() {
+		return itemList;
+	}
+	
+	
+
+	public Boolean getSharedView() {
+		return sharedView;
+	}
+	
+	public void setSharedView(Boolean sharedView) {
+		if(this.getEditable()==True){
+		//if(editable==True){
+			this.sharedView = sharedView;
+		}
+	}
+
+
+
+
+
 */
 }
