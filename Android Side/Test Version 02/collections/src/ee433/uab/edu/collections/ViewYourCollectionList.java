@@ -12,6 +12,8 @@ package ee433.uab.edu.collections;
 //Should have a master class for viewing this and viewing others collections, technical debt?
 //
  
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.ActionBar.LayoutParams;
@@ -50,37 +52,61 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
         // create the layout params that will be used to define how your
         // button will be displayed
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-         
+        LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+
+        //TBD - Call method to create list of the users collections
+        
+        //Test case:
+        ArrayList<String> testArrayOfCollections = new ArrayList<String>();
+        testArrayOfCollections.add("Stamps");
+        testArrayOfCollections.add("Max Wolfe");        
+        testArrayOfCollections.add("Cars");
+        testArrayOfCollections.add("Lee Adlaf");
+        
+        //int size = testArrayOfCollections.size();
+        //testArrayOfCollections.get(1);
+        
+        
+        
         //Create four items
         // TBD - should poll / pull users collection information from the database
-        for(int j=0;j<=4;j++)
+        
+        
+        
+        for(int indexx=0;indexx<testArrayOfCollections.size();indexx++)
+        	
+        //for(int j=0;j<=4;j++)
         {  
             // Create LinearLayout
             LinearLayout ll = new LinearLayout(this);
             ll.setOrientation(LinearLayout.HORIZONTAL);
              
+            
+            
             // Create TextView
             TextView product = new TextView(this);
-            product.setText(" Collection "+j+"    ");
+            //product.setText(" Collection "+j+"    ");
+            //String collectionItem = testArrayOfCollections.get(1);
+            product.setText(testArrayOfCollections.get(indexx));
+            //product.setText(collectionItem);
             ll.addView(product);
              
             // Create TextView
             TextView price = new TextView(this);
-            price.setText(" # of Items: "+j+"     ");
+            price.setText(" # of Items: "+indexx+"     ");
             ll.addView(price);
              
             // Create Button
             final Button btn = new Button(this);
                 // Give button an ID
-                btn.setId(j+1);
+                btn.setId(indexx+1);
                 btn.setText("View");
                 // set the layoutParams on the button
                 btn.setLayoutParams(params);
                 homeButton.setOnClickListener(this);
                 othersCollectionsButtons.setOnClickListener(this);
                 
-             final int index = j;
+             final int index = indexx;
                 // Set click listener for button
                 btn.setOnClickListener(new OnClickListener() {
                     public void onClick(View v) {
