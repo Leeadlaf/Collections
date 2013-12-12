@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
 <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/collectionName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -17,7 +17,7 @@
     android:id="@+id/goHomeButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignBottom="@+id/textView1"
+    android:layout_alignBottom="@+id/collectionName"
     android:layout_alignParentLeft="true"
     android:layout_marginLeft="24dp"
     android:text="Home" />

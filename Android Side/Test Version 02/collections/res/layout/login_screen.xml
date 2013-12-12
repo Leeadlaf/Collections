@@ -41,7 +41,7 @@
         android:text="Login" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/collectionName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -54,7 +54,7 @@
         android:id="@+id/newUserButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBottom="@+id/collectionName"
         android:layout_alignLeft="@+id/loginButton"
         android:text="New User" />
 

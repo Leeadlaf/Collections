@@ -13,12 +13,10 @@ package ee433.uab.edu.collections;
 //
  
 import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.ActionBar.LayoutParams;
 import android.content.Intent;
-//import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -26,23 +24,15 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 //import android.widget.Toast;
- 
+//import android.util.Log;
+
 public class ViewYourCollectionList extends Activity implements View.OnClickListener {
- 
-	
-	// Initializing variables
-//	View userName;
-//	EditText userName;	
-	
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.your_collection_list_screen);
-        
-//		//Defining text
-//		userName = findViewById(R.id.userName);
-//		userName = (EditText) findViewById(R.id.userName);        
-        
+
         //Defining buttons
       	Button homeButton = (Button) findViewById (R.id.homeButton);
         Button othersCollectionsButtons = (Button) findViewById (R.id.othersCollectionsButtons);
@@ -62,76 +52,53 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
         testArrayOfCollections.add("Max Wolfe");        
         testArrayOfCollections.add("Cars");
         testArrayOfCollections.add("Lee Adlaf");
-        
-        //int size = testArrayOfCollections.size();
-        //testArrayOfCollections.get(1);
-        
-        
-        
-        //Create four items
-        // TBD - should poll / pull users collection information from the database
-        
-        
-        
-        for(int indexx=0;indexx<testArrayOfCollections.size();indexx++)
-        	
-        //for(int j=0;j<=4;j++)
-        {  
+
+        //Create List Items
+         for(int index=0;index<testArrayOfCollections.size();index=index+2){  
             // Create LinearLayout
             LinearLayout ll = new LinearLayout(this);
             ll.setOrientation(LinearLayout.HORIZONTAL);
-             
-            
-            
+                                    
             // Create TextView
             TextView product = new TextView(this);
-            //product.setText(" Collection "+j+"    ");
-            //String collectionItem = testArrayOfCollections.get(1);
-            product.setText(testArrayOfCollections.get(indexx));
-            //product.setText(collectionItem);
+            product.setText(testArrayOfCollections.get(index));
             ll.addView(product);
              
+            //TBD - number of Items in a collection - Technical debt?
             // Create TextView
-            TextView price = new TextView(this);
-            price.setText(" # of Items: "+indexx+"     ");
-            ll.addView(price);
+            //TextView price = new TextView(this);
+            //price.setText(" # of Items: "+index+"     ");
+            //ll.addView(price);
              
             // Create Button
             final Button btn = new Button(this);
                 // Give button an ID
-                btn.setId(indexx+1);
+                btn.setId(index+2);
                 btn.setText("View");
-                // set the layoutParams on the button
+                // set the layoutParams on the buttons
                 btn.setLayoutParams(params);
                 homeButton.setOnClickListener(this);
                 othersCollectionsButtons.setOnClickListener(this);
                 
-             final int index = indexx;
+                //variable to pass along what collection index number was chosen to the next screen
+                final int number = index;
+                final String collectionName = testArrayOfCollections.get(index);
+                                
                 // Set click listener for button
                 btn.setOnClickListener(new OnClickListener() {
                     public void onClick(View v) {
-//            		    switch(v.getId()) {
-//         	            	case R.id.homeButton:
-//         	            		Intent homeScreen = new Intent (getApplicationContext(), HomeScreen.class);
-//         	   			
-//         	            		//starting new activity - view Home Screen
-//         	            		startActivity(homeScreen);
-//         	        	   break; }
-                    	
-                    	
-                    	//If Button inside Listview is clicked - TBD - How to pass information to the view collection screen?
+              	
+                    	//If Button inside Listview is clicked
                     	Intent collectionScreen = new Intent (getApplicationContext(), ViewCollection.class); //TBD fix link
-         	   			
+     		       	    
+                    	//passing along what collection index number was chosen to the next screen
+                    	collectionScreen.putExtra("collectionClicked", number);
+                    	
+                    	//passing along what collection name to the next screen
+                    	collectionScreen.putExtra("collectionNameClicked", collectionName);
+                    	                    	
          	            //starting new activity - view Home Screen
          	            startActivity(collectionScreen);
-                    	
-//Using Toast                  	
-//                    	Log.i("TAG", "index :" + index);
-//                         
-//                        Toast.makeText(getApplicationContext(),
-//                                "Clicked Button Index :" + index,
-//                                Toast.LENGTH_LONG).show();
-                         
                     }
                 });
                  
@@ -147,13 +114,6 @@ public class ViewYourCollectionList extends Activity implements View.OnClickList
 	    switch(v.getId()) {
      	case R.id.homeButton:
      		Intent homeScreen = new Intent (getApplicationContext(), HomeScreen.class);
-
-//     		userName = findViewById(R.id.userName);
-//     		homeScreen.putExtra("name", userName.getText().toString());     
-//     		homeScreen.putExtra("name", userName.toString());     		
-//     		homeScreen.putExtra("name", userName.getText().toString());
-//     		homeScreen.putExtra(userName.toString());
-//     		homeScreen.putExtra(userName, name);     		
      		
      		//starting new activity - view Home Screen
      		startActivity(homeScreen);

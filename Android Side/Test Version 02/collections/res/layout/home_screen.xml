@@ -9,7 +9,7 @@
     tools:context=".HomeScreen" >
 
 <TextView
-    android:id="@+id/textView1"
+    android:id="@+id/collectionName"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
@@ -52,7 +52,7 @@
     android:id="@+id/logOutButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignBottom="@+id/textView1"
+    android:layout_alignBottom="@+id/collectionName"
     android:layout_alignLeft="@+id/networking"
     android:text="Log Out" />
 
@@ -60,7 +60,7 @@
     android:id="@+id/userName"
     android:layout_width="150dp"
     android:layout_height="wrap_content"
-    android:layout_alignRight="@+id/textView1"
+    android:layout_alignRight="@+id/collectionName"
     android:layout_below="@+id/textView2"
     android:layout_margin="15dip"
     android:layout_marginTop="14dp"

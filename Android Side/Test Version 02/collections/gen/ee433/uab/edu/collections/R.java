@@ -26,6 +26,7 @@ public final class R {
     public static final class id {
         public static final int action_settings=0x7f08001e;
         public static final int addItemButton=0x7f080003;
+        public static final int collectionName=0x7f080000;
         public static final int createNewUserButton=0x7f080011;
         public static final int desiredEmailAddress=0x7f08000e;
         public static final int desiredPassword=0x7f080010;
@@ -33,27 +34,26 @@ public final class R {
         public static final int desiredZipCode=0x7f08000f;
         public static final int goHomeButton=0x7f080001;
         public static final int homeButton=0x7f080013;
-        public static final int itemResearchButton=0x7f080016;
+        public static final int itemResearchButton=0x7f080015;
         public static final int linearMain=0x7f080012;
         public static final int logOutButton=0x7f080005;
         public static final int loginButton=0x7f08000b;
         public static final int networking=0x7f080006;
         public static final int networkingButton=0x7f080004;
         public static final int newUserButton=0x7f08000c;
-        public static final int othersCollectionsButtons=0x7f080015;
-        public static final int removeItemButtonbutton1=0x7f080018;
-        public static final int textView1=0x7f080000;
+        public static final int othersCollectionsButtons=0x7f08001d;
+        public static final int removeItemButtonbutton1=0x7f080017;
         public static final int textView2=0x7f080008;
-        public static final int textView3=0x7f080019;
-        public static final int textView4=0x7f08001a;
-        public static final int textView5=0x7f08001b;
-        public static final int textView6=0x7f08001c;
-        public static final int textView7=0x7f08001d;
+        public static final int textView3=0x7f080018;
+        public static final int textView4=0x7f080019;
+        public static final int textView5=0x7f08001a;
+        public static final int textView6=0x7f08001b;
+        public static final int textView7=0x7f08001c;
         public static final int userName=0x7f080007;
         public static final int userPassword=0x7f08000a;
         public static final int version=0x7f080009;
         public static final int viewCollectionsButton=0x7f080002;
-        public static final int viewImagesButton=0x7f080017;
+        public static final int viewImagesButton=0x7f080016;
         public static final int yourCollectionsButtons=0x7f080014;
     }
     public static final class layout {
