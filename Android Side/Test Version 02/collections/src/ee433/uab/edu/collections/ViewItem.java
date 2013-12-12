@@ -14,15 +14,15 @@ package ee433.uab.edu.collections;
  
 import android.os.Bundle;
 import android.app.Activity;
-//import android.app.ActionBar.LayoutParams;
-//import android.content.Intent;
-//import android.util.Log;
-//import android.view.View;
-//import android.view.View.OnClickListener;
-//import android.widget.Button;
-//import android.widget.LinearLayout;
-//import android.widget.TextView;
-//import android.widget.Toast;
+import android.app.ActionBar.LayoutParams;
+import android.content.Intent;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
  
 public class ViewItem extends Activity {
  

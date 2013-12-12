@@ -55,65 +55,78 @@ public class ViewCollection extends Activity implements View.OnClickListener {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
         LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 
-        //TBD - Call method to create list of the collections items
+        //TBD - Call method to create list of the correct collections items
+        //Test case:
+        ArrayList<String> testArrayOfItems = new ArrayList<String>();        
+        //Stamps Collection:
+        if (collectionNumber == 0){
+        	testArrayOfItems.add("Inverted Jenny");      	
+        	testArrayOfItems.add("Stamps");      
+        	testArrayOfItems.add("1918");      
+        	testArrayOfItems.add("Fair");      
+        	testArrayOfItems.add("is a United States postage stamp first issued on May 10, 1918 in which the image of the Curtiss JN-4 airplane in the center of the design appears upside-down.");      
+        	testArrayOfItems.add("Yes");      
+        	testArrayOfItems.add("Jackson");      
+        	testArrayOfItems.add("Stamps");      
+        	testArrayOfItems.add("1922");      
+        	testArrayOfItems.add("Poor");      
+        	testArrayOfItems.add("I'll fill this in later...");      
+        	testArrayOfItems.add("No");          
+        	}
+        else if (collectionNumber == 2){
+        	testArrayOfItems.add("Randal"); 
+        	testArrayOfItems.add("Cars"); 
+        	testArrayOfItems.add("1967"); 
+        	testArrayOfItems.add("Good"); 
+        	testArrayOfItems.add("I don't know anything about classic cars.  I even made up the name 'Randal'"); 
+        	testArrayOfItems.add("Yes"); 
+        	}
+        else {
+        	}
         
-//        //Test case:
-//        ArrayList<String> testArrayOfCollections = new ArrayList<String>();
-//        testArrayOfCollections.add("Stamps");
-//        testArrayOfCollections.add("Max Wolfe");        
-//        testArrayOfCollections.add("Cars");
-//        testArrayOfCollections.add("Lee Adlaf");
-//
-//        //Create List Items
-//         for(int index=0;index<testArrayOfCollections.size();index=index+2){  
-//            // Create LinearLayout
-//            LinearLayout ll = new LinearLayout(this);
-//            ll.setOrientation(LinearLayout.HORIZONTAL);
-//                                    
-//            // Create TextView
-//            TextView product = new TextView(this);
-//            product.setText(testArrayOfCollections.get(index));
-//            ll.addView(product);
-//             
-//            //TBD - number of Items in a collection - Technical debt?
-//            // Create TextView
-//            //TextView price = new TextView(this);
-//            //price.setText(" # of Items: "+index+"     ");
-//            //ll.addView(price);
-//             
-//            // Create Button
-//            final Button btn = new Button(this);
-//                // Give button an ID
-//                btn.setId(index+2);
-//                btn.setText("View");
-//                // set the layoutParams on the buttons
-//                btn.setLayoutParams(params);
-//                homeButton.setOnClickListener(this);
-//                //othersCollectionsButtons.setOnClickListener(this);
-//                
-//                //variable to pass along what collection index number was chosen to the next screen
-//                final int number = index;
-//                                
-//                // Set click listener for button
-//                btn.setOnClickListener(new OnClickListener() {
-//                    public void onClick(View v) {
-//              	
-//                    	//If Button inside Listview is clicked
-//                    	Intent collectionScreen = new Intent (getApplicationContext(), ViewCollection.class); //TBD fix link
-//     		       	    
-//                    	//passing along what collection index number was chosen to the next screen
-//                    	collectionScreen.putExtra("collectionClicked", number);
-//                    	
-//         	            //starting new activity - view Home Screen
-//         	            startActivity(collectionScreen);
-//                    }
-//                });
-//                 
-//               //Add button to LinearLayout
-//                ll.addView(btn);
-//               //Add button to LinearLayout defined in XML
-//                lm.addView(ll); 
-//        }
+        //Create List Items
+         for(int index=0;index<testArrayOfItems.size();index=index+6){  
+            // Create LinearLayout
+            LinearLayout ll = new LinearLayout(this);
+            ll.setOrientation(LinearLayout.HORIZONTAL);
+                                    
+            // Create TextView
+            TextView product = new TextView(this);
+            product.setText(testArrayOfItems.get(index));
+            ll.addView(product);
+
+            // Create Button
+            final Button btn = new Button(this);
+                // Give button an ID
+                btn.setId(index+6);
+                btn.setText("View");
+                // set the layoutParams on the buttons
+                btn.setLayoutParams(params);
+                homeButton.setOnClickListener(this);
+                
+                //variable to pass along what item index number was chosen to the next screen
+                final int number = index;
+                                
+                // Set click listener for button
+                btn.setOnClickListener(new OnClickListener() {
+                    public void onClick(View v) {
+              	
+                    	//If Button inside Listview is clicked
+                    	Intent itemScreen = new Intent (getApplicationContext(), ViewItem.class); //TBD fix link
+     		       	    
+                    	//passing along what Item index number was chosen to the next screen
+                    	itemScreen.putExtra("itemClicked", number);
+                    	
+         	            //starting new activity - view Home Screen
+         	            startActivity(itemScreen);
+                    }
+                });
+                 
+               //Add button to LinearLayout
+                ll.addView(btn);
+               //Add button to LinearLayout defined in XML
+                lm.addView(ll); 
+        }
     }
 
 	@Override
@@ -125,12 +138,7 @@ public class ViewCollection extends Activity implements View.OnClickListener {
      		//starting new activity - view Home Screen
      		startActivity(homeScreen);
  	   break; 
-     	case R.id.othersCollectionsButtons:
-     		Intent othersCollections = new Intent (getApplicationContext(), ViewOtherCollectionList.class);
-		
-     		//starting new activity - view Home Screen
-     		startActivity(othersCollections);
- 	   break; }
+	    }
 		// TODO Auto-generated method stub
 		
 	}
