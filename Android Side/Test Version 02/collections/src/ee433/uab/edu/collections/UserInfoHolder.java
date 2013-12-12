@@ -28,6 +28,45 @@ import android.widget.Button;
 //import android.view.Menu;
 
 public class UserInfoHolder {
+/*
+	private String userID;
+	private ArrayList<Collection> userCollections;
+
+	//constructor
+	public UserInfoHolder(userID){
+		this.userID = userID;
+		userCollections = new ArrayList<Collection>();
+
+		//some method that recieves the DB collection info based on userID
+		//userCollections = this.getUserCollections(userID);
+
+		
+		//JSON:
+		//userCollections = getJSONInfo();
+
+	}
+*/
+}
+	//ATTN: KUNI: insert method/code for populating a collection from the JSON object?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---OLD DO NOT DELETE INCASE USEFUL BUT NOT IMPORTANT
+
 		/*Notes: 
 		* Get data 2 ways:
 		* 1). Using 1 giant getInfo method that uses screen type to decide which to use : 
@@ -121,4 +160,4 @@ public class UserInfoHolder {
 
 //		String getName(){}
 //		public String getOwner(){}
-	}
+//	}

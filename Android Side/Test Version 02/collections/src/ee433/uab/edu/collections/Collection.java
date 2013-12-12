@@ -11,14 +11,14 @@ package ee433.uab.edu.collections;
 import java.util.ArrayList;
 
 
-// Q: need to fomat based on class diagram 	
-// A: 				{date issue addressed: 12/dd/13	}
-public class Collection {
 
+public class Collection {
+/*
 	private String user;
-	private String name;					//added
+	private int collectionNumber;
+	private String name;					
 	private String category;
-	private int numberOfItems;				//added
+	private int numberOfItems;
 	private ArrayList<Item> itemCollection;
 	private Boolean viewable;				
 
@@ -26,6 +26,8 @@ public class Collection {
 
 	public Collection() {
 		// Constructor creates empty ArrayList of Item objects
+		user = "<blank>";
+		category = "<blank>";
 		itemCollection = new ArrayList<Item>(); 
 	}
 
@@ -35,8 +37,40 @@ public class Collection {
 		// Constructor creates empty ArrayList with user and category of collection
 		this.user = user;
 		this.category = category;
+		itemCollection = new ArrayList<Item>();
+		itemCollection = getItemsFromDB(user);
 	}
 	
+	public ArrayList<Item> getItemsFromJSON(user){
+		userID = this.user;
+		//ATTN KUNI:
+		//populate list for the specified userID.
+		//ArrayList<Item>= getJSON();
+
+	}
+
+
+	public ArrayList<Item> getItemsFromDB(user){
+		userID = this.user;
+		//ATTN KUNI:
+		//populate list for the specified userID.
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public void addItem(Item item){
 		//Adds itemCollection to Collection
 		itemCollection.add(item);
@@ -60,4 +94,5 @@ public class Collection {
 		//If FALSE, set to be invisible to other users.
 		this.viewable = state;
 	}
+*/
 }
