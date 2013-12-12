@@ -61,13 +61,13 @@
     android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:layout_alignRight="@+id/collectionName"
-    android:layout_below="@+id/textView2"
+    android:layout_below="@+id/itemTitle"
     android:layout_margin="15dip"
     android:layout_marginTop="14dp"
     android:textSize="20dip" />
 
 <TextView
-    android:id="@+id/textView2"
+    android:id="@+id/itemTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/userName"

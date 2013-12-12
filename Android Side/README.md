@@ -115,7 +115,13 @@ Collection$
 ### 12/11/2013  ~  LWA  ~  Notes:
 
 *	Using shared preferences to store information for the current session (like username)
-*
+
+### 12/12/2013  ~  LWA  ~  Notes:
+
+*	Cleaned up code relating to GUI
+*	added sample arraylists for our presentation
+*	ran through tests cases
+*	updated list of technical debt and TBD for specific GUI-related .java files **(Kuni & Jeremy - you guys may want to clean up / add TBD from .java files you added)**
 
 ### Next Date...  ~  initials  ~  Notes:
 

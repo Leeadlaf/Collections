@@ -1,7 +1,7 @@
 /*
  * File: Login.java
  * Author: Lee Adlaf <adlaf@uab.edu>
- * Vers: 1.1.5 12/11/2013 lwa - using shared preferences to store the current username
+ * Vers: 1.1.5 12/11/2013 lwa - using shared preferences to store the current username, cleanup
  * Vers: 1.1.2 12/06/2013 lwa - declaring text input - passing username to home screen
  * Vers: 1.1.1 12/06/2013 jtb - added initial code for doLoginCheck and populateUserInfoHolder method
  * Vers: 1.1.0 12/03/2013 lwa - modified code, both buttons working
@@ -12,10 +12,8 @@
 
 package ee433.uab.edu.collections;
 
-// Clean up and comment code (ongoing)
-// ADD login mechanics: Check user name / password against Database?
-// Fix indents??
-// 
+//TBD - Check to see if the user / password is in the database!
+//TBD - check validity of user input
 
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -75,9 +73,6 @@ public class Login extends Activity implements View.OnClickListener {
 		       	break;
 		        case R.id.loginButton:
 		       	   Intent homeScreen = new Intent (getApplicationContext(), HomeScreen.class);
-		       	   
-		           //Sending the Data to next screen - NO LONGER NEEDED WITH SHARED PREFERENCES.  do not delete 
-		       	   //homeScreen.putExtra("name", userName.getText().toString());
 
 		       	   //TBD - Check to see if the user / password is in the database!
 		   			

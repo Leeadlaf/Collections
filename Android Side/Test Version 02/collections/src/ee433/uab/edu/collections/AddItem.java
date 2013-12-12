@@ -8,21 +8,11 @@
 
 package ee433.uab.edu.collections;
 
-//Clean up and comment code (ongoing)
 //TBD - write code / design screen to do add item
-//
  
 import android.os.Bundle;
 import android.app.Activity;
-//import android.app.ActionBar.LayoutParams;
-//import android.content.Intent;
-//import android.util.Log;
-//import android.view.View;
-//import android.view.View.OnClickListener;
-//import android.widget.Button;
-//import android.widget.LinearLayout;
-//import android.widget.TextView;
-//import android.widget.Toast;
+
  
 public class AddItem extends Activity {
  

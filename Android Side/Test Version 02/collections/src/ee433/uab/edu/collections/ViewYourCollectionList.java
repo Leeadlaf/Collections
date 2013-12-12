@@ -1,6 +1,7 @@
 /*
  * File: ViewYourCollectionList.java
  * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.0.5 12/12/2013 lwa - added test data
  * Vers: 1.0.0 12/04/2013 lwa - initial coding
  * 
  * Credits:
@@ -8,9 +9,8 @@
 
 package ee433.uab.edu.collections;
 
-//Clean up and comment code (ongoing)
-//Should have a master class for viewing this and viewing others collections, technical debt?
-//
+//TBD - number of Items in a collection?
+//TDB - populate with 'real' database information
  
 import java.util.ArrayList;
 import android.os.Bundle;
@@ -23,8 +23,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-//import android.widget.Toast;
-//import android.util.Log;
 
 public class ViewYourCollectionList extends Activity implements View.OnClickListener {
 

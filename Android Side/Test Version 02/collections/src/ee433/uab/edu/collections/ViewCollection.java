@@ -9,9 +9,7 @@
 
 package ee433.uab.edu.collections;
 
-//Clean up and comment code (ongoing)
-//
-//
+//TBD - populate with 'real' database information
  
 import java.util.ArrayList;
 import android.os.Bundle;
@@ -50,14 +48,13 @@ public class ViewCollection extends Activity implements View.OnClickListener {
         
         final LinearLayout lm = (LinearLayout) findViewById(R.id.linearMain);
          
-        // create the layout params that will be used to define how your
-        // button will be displayed
+        // create the layout params that will be used to define how buttons will be displayed
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
         LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 
         //TBD - Call method to create list of the correct collections items
         //Test case:
-        ArrayList<String> testArrayOfItems = new ArrayList<String>();        
+        final ArrayList<String> testArrayOfItems = new ArrayList<String>();        
         //Stamps Collection:
         if (collectionNumber == 0){
         	testArrayOfItems.add("Inverted Jenny");      	
@@ -115,6 +112,7 @@ public class ViewCollection extends Activity implements View.OnClickListener {
                     	Intent itemScreen = new Intent (getApplicationContext(), ViewItem.class); //TBD fix link
      		       	    
                     	//passing along what Item index number was chosen to the next screen
+                    	itemScreen.putStringArrayListExtra("arrayOfItems", testArrayOfItems);
                     	itemScreen.putExtra("itemClicked", number);
                     	
          	            //starting new activity - view Home Screen
@@ -143,9 +141,6 @@ public class ViewCollection extends Activity implements View.OnClickListener {
 		
 	}
 }
-
-
-
 
 //IMPORTANT: make this class implement InfoExtractor
 /**
