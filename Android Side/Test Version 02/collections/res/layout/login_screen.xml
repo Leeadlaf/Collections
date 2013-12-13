@@ -65,7 +65,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/loginButton"
         android:layout_marginTop="14dp"
-        android:text="Test Network Connection (IP address)" />
+        android:text="Eclectia.org" />
 
     <Button
         android:id="@+id/networkTeam2TestButton"
@@ -73,7 +73,14 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/networkTestButton"
         android:layout_below="@+id/networkTestButton"
-        android:layout_marginTop="14dp"
-        android:text="Test Network Connection (Team 2 data)" />
+        android:text="bot.whatismyipaddress.com" />
+
+    <Button
+        android:id="@+id/team2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/networkTeam2TestButton"
+        android:layout_below="@+id/networkTeam2TestButton"
+        android:text="Kuni&apos;s Server (coming soon)" />
 
 </RelativeLayout>

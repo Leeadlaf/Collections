@@ -1,5 +1,5 @@
 /*
- * File: TestConnection.java
+ * File: TestConnection2.java
  * Author: Lee Adlaf <adlaf@uab.edu>
  * Vers: 1.0.0 12/13/2013 lwa - initial coding
  * 
@@ -47,68 +47,173 @@ import android.content.SharedPreferences;
 
 @TargetApi(Build.VERSION_CODES.GINGERBREAD) //222
 @SuppressLint("NewApi") //222
-public class TestConnection extends Activity {
+public class TestConnection2 extends Activity {
 
 	// Define shared preferences
 	//SharedPreferences namePreferences;
 	
 	String result;
-	String result2;
+	public static String result2;
 	
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD) //222
 	@SuppressLint("NewApi") //222
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.connection_screen);
+		setContentView(R.layout.connection_screen2);
 		
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 		StrictMode.setThreadPolicy(policy); 
+
+		//result = getURLContent("http://www.yahoo.com");
 		
-		URI url;
+		
 		try {
-			url = new URI("http://eclectia.org/Test.txt");
-			HttpClient client = new DefaultHttpClient();
-			HttpGet request = new HttpGet(url);
-			HttpResponse response = client.execute(request);
-
-			
-			
-			
-			
-			String html = "";
-			InputStream in = response.getEntity().getContent();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-			StringBuilder str = new StringBuilder();
-			String line = null;
-			while((line = reader.readLine()) != null)
-			{
-		    str.append(line);
-			}
-			in.close();
-			html = str.toString();	
-			
-
-		    result = html;
-			result2 = "//Results of accessing a .txt file hosted at eclectia.org";
-
-		    TextView connectionResult2 = (TextView) findViewById(R.id.connectionResult2);
-	        connectionResult2.setText(result2);
-		    
-		    TextView connectionResult = (TextView) findViewById(R.id.connectionResult);
-	        connectionResult.setText(result);
-			
-			
-		} catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
+			result = getInternetData();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		result2 = "//the IP address currently being used by my android device";
+		
+	    TextView connectionResult2 = (TextView) findViewById(R.id.responceText2);
+        connectionResult2.setText(result2);
+	    
+	    TextView connectionResult = (TextView) findViewById(R.id.responceText);
+        connectionResult.setText(result);
+		
+		
+	}
+	
+	public String getInternetData() throws Exception{
+
+        //new TrustAllManager();
+        //new TrustAllSSLSocketFactory();
+
+        BufferedReader in = null;
+        String data = null;
+
+
+        try
+        {
+            HttpClient client = new DefaultHttpClient();
+            URI website = new URI("http://bot.whatismyipaddress.com");
+            HttpGet request = new HttpGet();
+            request.setURI(website);
+            HttpResponse response = client.execute(request);
+            response.getStatusLine().getStatusCode();
+
+            in = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+            StringBuffer sb = new StringBuffer("");
+            String l = "";
+            String nl = System.getProperty("line.separator");
+            while ((l = in.readLine()) !=null){
+                sb.append(l + nl);
+            }
+            in.close();
+            data = sb.toString();
+            return data;        
+        } finally{
+            if (in != null){
+                try{
+                    in.close();
+                    return data;
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        }
+}
+	
+	
+	
+	
+	
+	
+		public static String getURLContent(String URL){
+	        String Result = "";
+	        String IP = "http://localhost/";
+	        try {
+	            // Create a URL for the desired page
+	            URL url = new URL(IP.concat(URL));
+
+	            // Read all the text returned by the server
+	            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+	            String str;// = null;
+	            //result2 = str;
+	            
+	            //String result2 = Result;
+	    	    //TextView connectionResult2 = (TextView) findViewById(R.id.responceText2);
+	            //connectionResult2.setText(str);
+	            
+	            
+	            while ((str = in.readLine()) != null) {
+	                // str is one line of text; readLine() strips the newline character(s)
+	                Result = Result+str+"~";
+		            //result2 = str;
+		            
+	            }
+	            
+	            //result2 = Result;
+	    	    //TextView connectionResult2 = (TextView) findViewById(R.id.responceText2);
+	            //connectionResult2.setText(result2);
+	            
+	            in.close();
+	        } catch (MalformedURLException e) {
+	            e.printStackTrace();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        return Result;
+	    }
+		
+		
+		
+//		URI url;
+//		try {
+//			url = new URI("http://www.bot.whatismyipaddress.com");
+//			HttpClient client = new DefaultHttpClient();
+//			HttpGet request = new HttpGet(url);
+//			HttpResponse response = client.execute(request);
+//
+//			
+//			
+//			
+//			
+//			String html = "";
+//			InputStream in = response.getEntity().getContent();
+//			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+//			StringBuilder str = new StringBuilder();
+//			String line = null;
+//			while((line = reader.readLine()) != null)
+//			{
+//		    str.append(line);
+//			}
+//			in.close();
+//			html = str.toString();	
+//			
+//		    result2 = in.toString();
+//		    //result2 = line;  //null at this point
+//		    result = html;
+//		    
+//
+//		    TextView connectionResult2 = (TextView) findViewById(R.id.responceText2);
+//	        connectionResult2.setText(result2);
+//		    
+//		    TextView connectionResult = (TextView) findViewById(R.id.responceText);
+//	        connectionResult.setText(result);
+//			
+//			
+//		} catch (URISyntaxException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (ClientProtocolException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 
 		
@@ -224,7 +329,7 @@ public class TestConnection extends Activity {
 		
 		
 		
-	}
+	//}
 
 	private void readStream(InputStream in) {
 		//private void readStream(InputStream in) {

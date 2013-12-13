@@ -21,7 +21,7 @@
         android:text="Home" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/responceText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/responceText2"
         android:layout_marginTop="14dp"
         android:text="Date From:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -83,7 +83,7 @@
         android:id="@+id/removeItemButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
+        android:layout_above="@+id/responceText2"
         android:layout_toRightOf="@+id/textView4"
         android:text="REMOVE" />
 
@@ -91,7 +91,7 @@
         android:id="@+id/viewImagesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
+        android:layout_above="@+id/responceText2"
         android:layout_marginLeft="18dp"
         android:layout_toRightOf="@+id/removeItemButton"
         android:text="Images" />
@@ -100,8 +100,8 @@
         android:id="@+id/itemCondition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignBaseline="@+id/responceText2"
+        android:layout_alignBottom="@+id/responceText2"
         android:layout_toLeftOf="@+id/textView10"
         android:text="condition"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -127,7 +127,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/responceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView10"

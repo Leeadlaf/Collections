@@ -85,7 +85,7 @@ public class Login extends Activity implements View.OnClickListener {
 		       	   startActivity(homeScreen);
 		        break;
 		        case R.id.networkTeam2TestButton:
-			       	   Intent testTeam2Connection = new Intent (getApplicationContext(), TestConnection.class);
+			       	   Intent testTeam2Connection = new Intent (getApplicationContext(), TestConnection2.class);
 
 			       	   //TBD - Check to see if the user / password is in the database!
 			   			

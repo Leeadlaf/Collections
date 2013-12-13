@@ -29,4 +29,16 @@
     android:text="connection result"
     android:textSize="20dip" />
 
+<TextView
+    android:id="@+id/connectionResult2"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/connectionResult"
+    android:layout_alignRight="@+id/connectionResult"
+    android:layout_below="@+id/connectionResult"
+    android:layout_margin="15dip"
+    android:layout_marginTop="25dp"
+    android:text="connection result2"
+    android:textSize="15dip" />
+
 </RelativeLayout>
