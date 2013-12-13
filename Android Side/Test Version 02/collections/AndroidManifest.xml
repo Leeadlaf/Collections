@@ -37,6 +37,10 @@
             android:label=" Collections List:" >
         </activity>
         <activity
+            android:name="ee433.uab.edu.collections.TestConnection"
+            android:label=" Connection?" >
+        </activity>
+        <activity
             android:name="ee433.uab.edu.collections.ViewOtherCollectionList"
             android:label=" Collections List:" >
         </activity>

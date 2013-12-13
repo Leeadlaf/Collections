@@ -44,16 +44,21 @@ public class Login extends Activity implements View.OnClickListener {
 		namePreferences = PreferenceManager.getDefaultSharedPreferences(this);
 		
 		//Defining text
-		userName = (EditText) findViewById(R.id.userName);
+		userName = (EditText) findViewById(R.id.connectionResult);
 		userPassword = (EditText) findViewById(R.id.userPassword);
 		
 		//Defining buttons
 		Button newUserButton = (Button) findViewById (R.id.newUserButton);
 		Button loginButton = (Button) findViewById (R.id.loginButton);
+		Button networkTestButton = (Button) findViewById (R.id.networkTestButton);		
+		Button networkTeam2TestButton = (Button) findViewById (R.id.networkTeam2TestButton);		
 		
 		//Listen for button press
 		newUserButton.setOnClickListener(this);
-		loginButton.setOnClickListener(this);}	
+		loginButton.setOnClickListener(this);	
+	    networkTeam2TestButton.setOnClickListener(this);		    
+        networkTestButton.setOnClickListener(this);}		
+	
 			
 		//If a button is clicked
 		@Override
@@ -79,6 +84,22 @@ public class Login extends Activity implements View.OnClickListener {
 		       	   //starting new activity - login screen
 		       	   startActivity(homeScreen);
 		        break;
+		        case R.id.networkTeam2TestButton:
+			       	   Intent testTeam2Connection = new Intent (getApplicationContext(), TestConnection.class);
+
+			       	   //TBD - Check to see if the user / password is in the database!
+			   			
+			       	   //starting new activity - login screen
+			       	   startActivity(testTeam2Connection);
+			    break;
+		        case R.id.networkTestButton:
+			       	   Intent testConnection = new Intent (getApplicationContext(), TestConnection.class);
+
+			       	   //TBD - Check to see if the user / password is in the database!
+			   			
+			       	   //starting new activity - login screen
+			       	   startActivity(testConnection);
+			    break;
 			}
 		}
 

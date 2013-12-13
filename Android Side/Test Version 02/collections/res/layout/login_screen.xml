@@ -10,7 +10,7 @@
     tools:context=".Login" >
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/connectionResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/userPassword"
@@ -24,7 +24,7 @@
         android:id="@+id/userPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/userName"
+        android:layout_below="@+id/connectionResult"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:ems="10"
@@ -57,5 +57,23 @@
         android:layout_alignBottom="@+id/collectionName"
         android:layout_alignLeft="@+id/loginButton"
         android:text="New User" />
+
+    <Button
+        android:id="@+id/networkTestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="14dp"
+        android:text="Test Network Connection (IP address)" />
+
+    <Button
+        android:id="@+id/networkTeam2TestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/networkTestButton"
+        android:layout_below="@+id/networkTestButton"
+        android:layout_marginTop="14dp"
+        android:text="Test Network Connection (Team 2 data)" />
 
 </RelativeLayout>

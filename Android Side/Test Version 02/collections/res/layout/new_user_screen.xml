@@ -17,7 +17,7 @@
         android:id="@+id/desiredUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/userName"
+        android:layout_below="@+id/connectionResult"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:ems="12"
