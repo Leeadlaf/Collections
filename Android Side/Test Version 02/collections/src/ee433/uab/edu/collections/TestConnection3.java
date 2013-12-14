@@ -49,7 +49,8 @@ public class TestConnection3 extends Activity {
 		URI url;
 		try {
 			//Set up currently to access a test servlet on my machine (LWA) 12/14/13
-			url = new URI("http://65.7.224.226:8080/Team2Servlet/CollectionsServlet");
+			url = new URI("http://71.45.66.15:8080/DatabaseConnect/DatabaseAccess");			
+			//url = new URI("http://65.7.224.226:8080/Team2Servlet/CollectionsServlet");
 			HttpClient client = new DefaultHttpClient();
 			HttpGet request = new HttpGet(url);
 			HttpResponse response = client.execute(request);
