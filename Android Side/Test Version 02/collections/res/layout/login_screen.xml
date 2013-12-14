@@ -81,6 +81,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/networkTeam2TestButton"
         android:layout_below="@+id/networkTeam2TestButton"
-        android:text="Kuni&apos;s Server (coming soon)" />
+        android:text="Team 2 Server" />
 
 </RelativeLayout>

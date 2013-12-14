@@ -1,6 +1,7 @@
 /*
  * File: Login.java
  * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.2.0 12/11/2013 lwa - network connection tests, buttons added
  * Vers: 1.1.5 12/11/2013 lwa - using shared preferences to store the current username, cleanup
  * Vers: 1.1.2 12/06/2013 lwa - declaring text input - passing username to home screen
  * Vers: 1.1.1 12/06/2013 jtb - added initial code for doLoginCheck and populateUserInfoHolder method
@@ -33,8 +34,7 @@ public class Login extends Activity implements View.OnClickListener {
 	EditText userName;
 	EditText userPassword;
 	SharedPreferences namePreferences;
-	
-	
+		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -52,13 +52,14 @@ public class Login extends Activity implements View.OnClickListener {
 		Button loginButton = (Button) findViewById (R.id.loginButton);
 		Button networkTestButton = (Button) findViewById (R.id.networkTestButton);		
 		Button networkTeam2TestButton = (Button) findViewById (R.id.networkTeam2TestButton);		
+		Button team2Button = (Button) findViewById (R.id.team2Button);		
 		
 		//Listen for button press
 		newUserButton.setOnClickListener(this);
 		loginButton.setOnClickListener(this);	
 	    networkTeam2TestButton.setOnClickListener(this);		    
-        networkTestButton.setOnClickListener(this);}		
-	
+        networkTestButton.setOnClickListener(this);	
+		team2Button.setOnClickListener(this);}	
 			
 		//If a button is clicked
 		@Override
@@ -86,19 +87,21 @@ public class Login extends Activity implements View.OnClickListener {
 		        break;
 		        case R.id.networkTeam2TestButton:
 			       	   Intent testTeam2Connection = new Intent (getApplicationContext(), TestConnection2.class);
-
-			       	   //TBD - Check to see if the user / password is in the database!
 			   			
-			       	   //starting new activity - login screen
+			       	   //starting new activity - connection test
 			       	   startActivity(testTeam2Connection);
 			    break;
 		        case R.id.networkTestButton:
 			       	   Intent testConnection = new Intent (getApplicationContext(), TestConnection.class);
-
-			       	   //TBD - Check to see if the user / password is in the database!
 			   			
-			       	   //starting new activity - login screen
+			       	   //starting new activity - connection test
 			       	   startActivity(testConnection);
+			    break;
+		        case R.id.team2Button:
+			       	   Intent testConnection3 = new Intent (getApplicationContext(), TestConnection3.class);
+			   			
+			       	   //starting new activity - connection test
+			       	   startActivity(testConnection3);
 			    break;
 			}
 		}

@@ -47,6 +47,10 @@
             android:label=" My IP address:?" >
         </activity>
         <activity
+            android:name="ee433.uab.edu.collections.TestConnection3"
+            android:label=" Team 2 Server Says:" >
+        </activity>
+        <activity
             android:name="ee433.uab.edu.collections.ViewOtherCollectionList"
             android:label=" Collections List:" >
         </activity>
