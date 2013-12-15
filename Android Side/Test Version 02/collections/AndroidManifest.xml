@@ -51,6 +51,10 @@
             android:label=" Team 2 Server Says:" >
         </activity>
         <activity
+            android:name="ee433.uab.edu.collections.TestConnection4"
+            android:label=" Lee's Server Says:" >
+        </activity>
+        <activity
             android:name="ee433.uab.edu.collections.ViewOtherCollectionList"
             android:label=" Collections List:" >
         </activity>

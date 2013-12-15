@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/resultsTest4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="28dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/results2Test4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resultsTest4"
+        android:layout_below="@+id/resultsTest4"
+        android:layout_marginTop="65dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/results2Test4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="86dp"
+        android:ems="10"
+        android:hint="Enter some text"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/postTestButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInput"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:text="post test" />
+
+    <Button
+        android:id="@+id/refreshPageButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/postTestButton"
+        android:layout_alignBottom="@+id/postTestButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:text="refresh page" />
+
+</RelativeLayout>
