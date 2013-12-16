@@ -63,17 +63,17 @@ public class TestConnection4 extends Activity implements OnClickListener {
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 		StrictMode.setThreadPolicy(policy); 
 		
-		//Defining buttons
-		Button refreshPageButton = (Button) findViewById (R.id.refreshPageButton);
-		Button postTestButton = (Button) findViewById (R.id.postTestButton);		
-		
-		//Listen for button press
-		refreshPageButton.setOnClickListener(this);
-		postTestButton.setOnClickListener(this);	
-		
-		
-		//Defining text
-		testInput = (EditText) findViewById(R.id.textInput);
+//		//Defining buttons
+//		Button refreshPageButton = (Button) findViewById (R.id.refreshPageButton);
+//		Button postTestButton = (Button) findViewById (R.id.postTestButton);		
+//		
+//		//Listen for button press
+//		refreshPageButton.setOnClickListener(this);
+//		postTestButton.setOnClickListener(this);	
+//		
+//		
+//		//Defining text
+//		testInput = (EditText) findViewById(R.id.textInput);
 		
 		
 		//Defining results
@@ -96,7 +96,7 @@ public class TestConnection4 extends Activity implements OnClickListener {
 		
 		
 		
-		results2Test4 = "//notes";
+		results2Test4 = "//Results of accessing a servlet hosted on Team 2's 2nd server";
 		
 		//Assign to text location, display text
 	    TextView connectionResult2 = (TextView) findViewById(R.id.results2Test4);
@@ -110,29 +110,34 @@ public class TestConnection4 extends Activity implements OnClickListener {
 	
     //If a button is clicked
 	public void onClick(View v) {
-		switch(v.getId()) {
-           case R.id.refreshPageButton:
-	       	   Intent testConnection4 = new Intent (getApplicationContext(), TestConnection4.class);
-	   			
-	       	   //refresh page
-	       	   startActivity(testConnection4);
-	       break;
-           case R.id.postTestButton:
-        	   
-        	   try {
-				postInternetData(testInput);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-        	   //Intent addItemScreen = new Intent (getApplicationContext(), AddItem.class);
-			   //Toast.makeText(getApplicationContext(),
-	           //"Add Item Coming Soon...",
-	           //Toast.LENGTH_LONG).show();
-        	   //starting new activity - add item
-        	   //startActivity(addItemScreen);
-           break;
-		}
+//		switch(v.getId()) {
+//           case R.id.refreshPageButton:
+//	       	   Intent testConnection4 = new Intent (getApplicationContext(), TestConnection4.class);
+//	   			
+//	       	   //refresh page
+//	       	   startActivity(testConnection4);
+//	       break;
+//           case R.id.postTestButton:
+//	       	   Intent testConnection5 = new Intent (getApplicationContext(), TestConnection4.class);
+//	   			
+//
+//        	   try {
+//				postInternetData(testInput);
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//        	   
+//	       	   //refresh page
+//	       	   startActivity(testConnection5);
+//        	   //Intent addItemScreen = new Intent (getApplicationContext(), AddItem.class);
+//			   //Toast.makeText(getApplicationContext(),
+//	           //"Add Item Coming Soon...",
+//	           //Toast.LENGTH_LONG).show();
+//        	   //starting new activity - add item
+//        	   //startActivity(addItemScreen);
+//           break;
+//		}
 	}
 	
 	
