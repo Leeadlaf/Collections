@@ -123,6 +123,16 @@ Collection$
 *	ran through tests cases
 *	updated list of technical debt and TBD for specific GUI-related .java files **(Kuni & Jeremy - you guys may want to clean up / add TBD from .java files you added)**
 
+### 12/16/2013  ~  LWA  ~  Notes:
+
+*	Test buttons added to the Login screen for connection tests (HTTP GET):
+	*	Test for connection to an .txt file on a static server
+	*	Test for IP address from dynamic server
+	*	Test for returned information from query to Team 2 server (Database-> servlet-> android app)
+	*	Test for returned information from query to 2nd Team 2 server.
+*	2nd server set up, .war file created to install a java servlet, tomcat used as running server, mysql used for database
+*	Started writing code for HTTP POST tests...
+
 ### Next Date...  ~  initials  ~  Notes:
 
 *	Keep Calm and Carry On

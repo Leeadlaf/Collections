@@ -8,18 +8,12 @@ UAB EE433 - Team 2 - Android Phone App - Collection$
 _This is a list of technical debt from code already written within **Test Version 02**_
 
 *	Not Using Tabs
-*	Limiting number of collections / items displayed (to help with screen issues)
-	*	Number to limit?
-*	Limit amount of information displayed about an object
-	*	What won't be displayed?
 *	No thumbnails on collection list
 *	No thumbnails on item list
-*	No images at all
 *	static collection information
-	*	No connection to database thru android app
+	*	{~~No connection to database thru android app~>.~~} **connection solved - _12/14/13_**
 *	no adding new items
 *	no editing new items
-
 
 ### TBD: _(ie. stuff we need to address)_
 
