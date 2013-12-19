@@ -96,7 +96,7 @@ public class TestConnection4 extends Activity implements OnClickListener {
 		
 		
 		
-		results2Test4 = "//Results of accessing a servlet hosted on Team 2's 2nd server";
+		results2Test4 = "//Results of accessing a servlet hosted on Team 2's server";
 		
 		//Assign to text location, display text
 	    TextView connectionResult2 = (TextView) findViewById(R.id.results2Test4);
@@ -219,7 +219,8 @@ public class TestConnection4 extends Activity implements OnClickListener {
         {
             HttpClient client = new DefaultHttpClient();
 			//Set up currently to access a test servlet on Lee's machine (LWA) 12/15/13
-            URI website = new URI("http://65.7.224.226:8080/Team2Servlet/CollectionsServlet");
+            //URI website = new URI("http://65.7.224.226:8080/Team2Servlet/CollectionsServlet");
+            URI website = new URI("http://71.45.66.15:8080/DatabaseConnect/DatabaseAccess");
             HttpGet request = new HttpGet();
             request.setURI(website);
             HttpResponse response = client.execute(request);

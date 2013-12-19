@@ -53,15 +53,15 @@ public class Login extends Activity implements View.OnClickListener {
 		Button networkTestButton = (Button) findViewById (R.id.networkTestButton);		
 		Button networkTeam2TestButton = (Button) findViewById (R.id.networkTeam2TestButton);		
 		Button team2Button = (Button) findViewById (R.id.team2Button);	
-		Button leeButton = (Button) findViewById (R.id.leeButton);			
+		//Button leeButton = (Button) findViewById (R.id.leeButton);			
 		
 		//Listen for button press
 		newUserButton.setOnClickListener(this);
 		loginButton.setOnClickListener(this);	
 	    networkTeam2TestButton.setOnClickListener(this);		    
         networkTestButton.setOnClickListener(this);	
-		team2Button.setOnClickListener(this);
-	    leeButton.setOnClickListener(this);}		
+		team2Button.setOnClickListener(this);}
+	    //leeButton.setOnClickListener(this);}		
 	
 		//If a button is clicked
 		@Override
@@ -100,17 +100,17 @@ public class Login extends Activity implements View.OnClickListener {
 			       	   startActivity(testConnection);
 			    break;
 		        case R.id.team2Button:
-			       	   Intent testConnection3 = new Intent (getApplicationContext(), TestConnection3.class);
+			       	   Intent testConnection3 = new Intent (getApplicationContext(), TestConnection4.class); //was TestConnection3.class
 			   			
 			       	   //starting new activity - connection test
 			       	   startActivity(testConnection3);
 			    break;
-		        case R.id.leeButton:
-			       	   Intent testConnection4 = new Intent (getApplicationContext(), TestConnection4.class);
-			   			
-			       	   //starting new activity - connection test
-			       	   startActivity(testConnection4);
-			    break;
+//		        case R.id.leeButton:
+//			       	   Intent testConnection4 = new Intent (getApplicationContext(), TestConnection4.class);
+//			   			
+//			       	   //starting new activity - connection test
+//			       	   startActivity(testConnection4);
+//			    break;
 			}
 		}
 

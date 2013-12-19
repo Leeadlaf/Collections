@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="500dp" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="192dp" >
 
     <TextView
         android:id="@+id/resultsTest4"
@@ -12,17 +16,20 @@
         android:layout_marginLeft="21dp"
         android:layout_marginTop="28dp"
         android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/results2Test4"
-        android:layout_width="wrap_content"
+        android:layout_width="225dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/resultsTest4"
         android:layout_below="@+id/resultsTest4"
         android:layout_marginTop="65dp"
         android:text="Small Text"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FA5882"
+        android:textSize="16dp" />
 
 <!--     <EditText -->
 <!--         android:id="@+id/textInput" -->
@@ -57,3 +64,4 @@
 <!--         android:text="refresh page" /> -->
 
 </RelativeLayout>
+</ScrollView>

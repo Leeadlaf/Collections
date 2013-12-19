@@ -83,13 +83,13 @@
         android:layout_below="@+id/networkTeam2TestButton"
         android:text="Team 2 Server" />
 
-    <Button
-        android:id="@+id/leeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/team2Button"
-        android:layout_alignBottom="@+id/team2Button"
-        android:layout_toRightOf="@+id/team2Button"
-        android:text="2nd Server" />
+<!--     <Button -->
+<!--         android:id="@+id/leeButton" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignBaseline="@+id/team2Button" -->
+<!--         android:layout_alignBottom="@+id/team2Button" -->
+<!--         android:layout_toRightOf="@+id/team2Button" -->
+<!--         android:text="2nd Server" /> -->
 
 </RelativeLayout>
