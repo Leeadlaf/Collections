@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/results2Test4"
-        android:layout_width="225dp"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/resultsTest4"
         android:layout_below="@+id/resultsTest4"
@@ -52,16 +52,15 @@
 <!--         android:layout_marginBottom="21dp" -->
 <!--         android:text="post test" /> -->
 
-<!--     <Button -->
-<!--         android:id="@+id/refreshPageButton" -->
-<!--         style="?android:attr/buttonStyleSmall" -->
-<!--         android:layout_width="wrap_content" -->
-<!--         android:layout_height="wrap_content" -->
-<!--         android:layout_alignBaseline="@+id/postTestButton" -->
-<!--         android:layout_alignBottom="@+id/postTestButton" -->
-<!--         android:layout_alignParentRight="true" -->
-<!--         android:layout_marginRight="27dp" -->
-<!--         android:text="refresh page" /> -->
+    <Button
+        android:id="@+id/refreshPageButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="Refresh Page" />
 
 </RelativeLayout>
 </ScrollView>

@@ -63,12 +63,12 @@ public class TestConnection4 extends Activity implements OnClickListener {
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 		StrictMode.setThreadPolicy(policy); 
 		
-//		//Defining buttons
-//		Button refreshPageButton = (Button) findViewById (R.id.refreshPageButton);
+		//Defining buttons
+		Button refreshPageButton = (Button) findViewById (R.id.refreshPageButton);
 //		Button postTestButton = (Button) findViewById (R.id.postTestButton);		
 //		
-//		//Listen for button press
-//		refreshPageButton.setOnClickListener(this);
+		//Listen for button press
+		refreshPageButton.setOnClickListener(this);
 //		postTestButton.setOnClickListener(this);	
 //		
 //		
@@ -110,13 +110,13 @@ public class TestConnection4 extends Activity implements OnClickListener {
 	
     //If a button is clicked
 	public void onClick(View v) {
-//		switch(v.getId()) {
-//           case R.id.refreshPageButton:
-//	       	   Intent testConnection4 = new Intent (getApplicationContext(), TestConnection4.class);
-//	   			
-//	       	   //refresh page
-//	       	   startActivity(testConnection4);
-//	       break;
+		switch(v.getId()) {
+           case R.id.refreshPageButton:
+	       	   Intent testConnection4 = new Intent (getApplicationContext(), TestConnection4.class);
+	   			
+	       	   //refresh page
+	       	   startActivity(testConnection4);
+	       break;
 //           case R.id.postTestButton:
 //	       	   Intent testConnection5 = new Intent (getApplicationContext(), TestConnection4.class);
 //	   			
@@ -137,7 +137,7 @@ public class TestConnection4 extends Activity implements OnClickListener {
 //        	   //starting new activity - add item
 //        	   //startActivity(addItemScreen);
 //           break;
-//		}
+		}
 	}
 	
 	
