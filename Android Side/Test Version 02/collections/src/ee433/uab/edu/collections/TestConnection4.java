@@ -1,6 +1,7 @@
 /*
  * File: TestConnection4.java
  * Author: Lee Adlaf <adlaf@uab.edu>
+ * Vers: 1.0.1 12/16/2013 lwa - URL changes
  * Vers: 1.0.0 12/15/2013 lwa - initial coding
  * 
  * Credits:  
@@ -92,10 +93,6 @@ public class TestConnection4 extends Activity implements OnClickListener {
 //			e.printStackTrace();
 //		}		
 		
-		
-		
-		
-		
 		results2Test4 = "//Results of accessing a servlet hosted on Team 2's server";
 		
 		//Assign to text location, display text
@@ -107,8 +104,7 @@ public class TestConnection4 extends Activity implements OnClickListener {
         connectionResult.setText(resultsTest4);
 	}
 	
-	
-    //If a button is clicked
+	//If a button is clicked
 	public void onClick(View v) {
 		switch(v.getId()) {
            case R.id.refreshPageButton:
@@ -117,31 +113,11 @@ public class TestConnection4 extends Activity implements OnClickListener {
 	       	   //refresh page
 	       	   startActivity(testConnection4);
 	       break;
-//           case R.id.postTestButton:
-//	       	   Intent testConnection5 = new Intent (getApplicationContext(), TestConnection4.class);
-//	   			
-//
-//        	   try {
-//				postInternetData(testInput);
-//			} catch (Exception e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//        	   
-//	       	   //refresh page
-//	       	   startActivity(testConnection5);
-//        	   //Intent addItemScreen = new Intent (getApplicationContext(), AddItem.class);
-//			   //Toast.makeText(getApplicationContext(),
-//	           //"Add Item Coming Soon...",
-//	           //Toast.LENGTH_LONG).show();
-//        	   //starting new activity - add item
-//        	   //startActivity(addItemScreen);
-//           break;
 		}
 	}
 	
 	
-	// HTTP POST request
+// HTTP POST request - TBD
 //	private String sendPost() throws Exception {
 //	 
 //			String url = "https://selfsolve.apple.com/wcResults.do";
@@ -181,14 +157,8 @@ public class TestConnection4 extends Activity implements OnClickListener {
 //            return result.toString();   
 //		}
 	
-	//Method to post information to servlet
-	public void postInternetData(EditText testInput2) throws Exception{
-		
-		
-		
-		
-		
-		
+// HTTP POST request - TBD
+//	public void postInternetData(EditText testInput2) throws Exception{
 //	     try {
 //	         HttpClient client = new DefaultHttpClient();  
 //	         String postURL = "http://65.7.224.226:8080/Team2Servlet/CollectionsServlet";
@@ -206,8 +176,7 @@ public class TestConnection4 extends Activity implements OnClickListener {
 //	     } catch (Exception e) {
 //	         e.printStackTrace();
 //	     }
-		
-	}
+//	}
 	
 	//Method to get information from servlet
 	public String getInternetData() throws Exception{

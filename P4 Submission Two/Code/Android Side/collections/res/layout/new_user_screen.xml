@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/collectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/version" />
+
+    <EditText
+        android:id="@+id/desiredUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectionResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="12"
+        android:hint="Enter Desired User Name" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/desiredEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desiredUserName"
+        android:layout_below="@+id/desiredUserName"
+        android:layout_marginTop="20dp"
+        android:ems="12"
+        android:hint="Your Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/desiredZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desiredEmailAddress"
+        android:layout_below="@+id/desiredEmailAddress"
+        android:layout_marginTop="17dp"
+        android:ems="12"
+        android:hint="Your Zip Code"
+        android:inputType="number" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/desiredPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desiredZipCode"
+        android:layout_below="@+id/desiredZipCode"
+        android:layout_marginTop="20dp"
+        android:ems="12"
+        android:hint="Your Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/createNewUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desiredPassword"
+        android:layout_below="@+id/desiredPassword"
+        android:layout_marginTop="30dp"
+        android:text="Create User" />
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/desiredZipCode"
+        android:layout_below="@+id/createNewUserButton"
+        android:layout_marginTop="18dp"
+        android:text="A confirmation Email will be sent to you" />
+
+</RelativeLayout>

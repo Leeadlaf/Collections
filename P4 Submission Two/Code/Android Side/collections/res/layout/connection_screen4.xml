@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="192dp" >
+
+    <TextView
+        android:id="@+id/resultsTest4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="28dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/results2Test4"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resultsTest4"
+        android:layout_below="@+id/resultsTest4"
+        android:layout_marginTop="65dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FA5882"
+        android:textSize="16dp" />
+
+<!--     <EditText -->
+<!--         android:id="@+id/textInput" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignLeft="@+id/results2Test4" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_marginBottom="86dp" -->
+<!--         android:ems="10" -->
+<!--         android:hint="Enter some text" -->
+<!--         android:inputType="text" /> -->
+
+<!--     <Button -->
+<!--         android:id="@+id/postTestButton" -->
+<!--         style="?android:attr/buttonStyleSmall" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignLeft="@+id/textInput" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_marginBottom="21dp" -->
+<!--         android:text="post test" /> -->
+
+    <Button
+        android:id="@+id/refreshPageButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="Refresh Page" />
+
+</RelativeLayout>
+</ScrollView>

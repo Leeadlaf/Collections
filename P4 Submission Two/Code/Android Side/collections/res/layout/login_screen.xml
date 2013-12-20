@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/version"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login" >
+
+    <EditText
+        android:id="@+id/connectionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userPassword"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/userPassword"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter User Name" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectionResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userPassword"
+        android:layout_below="@+id/userPassword"
+        android:layout_marginTop="22dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/collectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/version" />
+
+    <Button
+        android:id="@+id/newUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/collectionName"
+        android:layout_alignLeft="@+id/loginButton"
+        android:text="New User" />
+
+    <Button
+        android:id="@+id/networkTestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="14dp"
+        android:text="Eclectia.org" />
+
+    <Button
+        android:id="@+id/networkTeam2TestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/networkTestButton"
+        android:layout_below="@+id/networkTestButton"
+        android:text="bot.whatismyipaddress.com" />
+
+    <Button
+        android:id="@+id/team2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/networkTeam2TestButton"
+        android:layout_below="@+id/networkTeam2TestButton"
+        android:text="Team 2 Server" />
+
+<!--     <Button -->
+<!--         android:id="@+id/leeButton" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignBaseline="@+id/team2Button" -->
+<!--         android:layout_alignBottom="@+id/team2Button" -->
+<!--         android:layout_toRightOf="@+id/team2Button" -->
+<!--         android:text="2nd Server" /> -->
+
+</RelativeLayout>
