@@ -1,0 +1,91 @@
+MySQL Tutorial
+==============
+
+This is a short document detailing the setup and use of MySQL with respect to the UAB EE433 Collections project. For a more in depth understanding of MySQL, please refer to the [MySQL Reference Manual](http://dev.mysql.com/doc/refman/5.6/en/index.html). 
+-----
+
+First, go to the following link and choose the version of MySQL Community Edition which applies:
+http://dev.mysql.com/downloads/mysql/
+
+Follow the instructions in the setup. 
+
+	1. For the purpose of this project, "Developer Default" was chosen for the Setup Type. It may be beneficial to do a "Full" installation, since it includes examples, documentation, and more.
+	2. The installer will check to see if all prerequisite are met. Be sure to install all prerequisites.
+	3. Continue with installation. Once all chosen products are installed, configuration options will appear. "Development Machine" was chosen for this project. If you are setting up a dedicated server, you should consider the other options. For any remote connections, TCP/IP Networking and Open Firewall Port  *must* be enabled.
+	4. Next, setup password. Then install the server, and setup should be complete.
+
+MySQL Basics
+------------
+
+MySQL uses queries to either insert information into databases or find information. This section discusses basic queries. To store data into the database, they are put into tables.  The tables must be created and given columns that represent the types of data that go into the tables.
+
+To start, we can demonstrates basic queries. Without choosing a database, we can run a query to find the current time or the version of MySQL. This is done using the following query:
+
+SELECT NOW(), VERSION();
+
+Output:
+
+| NOW()               | VERSION() |
+| :-----------------: | :-------: |
+| 2013-12-21 17:25:45 | 5.6.15    |
+
+
+
+The SELECT command chooses what is to be printed based on the conditions in the command. In the above example, NOW() returns the current time and date and VERSION() returns the version of MySQL being used. 
+
+Now that we have executed a basic query, let's move on to creating and using databases and tables. To create a database, simply execute the following query:
+
+	CREATE DATABASE example;
+
+Then, to start using the database, use the following command:
+
+	USE example;
+
+Output:
+
+	Database changed.
+
+Now the database in use has changed. The USE command is also used to switch to another database. Now we can start creating and using the tables in the database. To create a table, you must choose a name and the type of information that will go into a table. For example, let's have a table that has a group of people and their age:
+
+	CREATE TABLE persons ( firstname VARCHAR(10), lastname VARCHAR(10), age INTEGER);
+
+The table create will have columns of firstname, lastname, and age, with the columns being of the types VARCHAR(10) (a type of characters that can be up to ten characters long), VARCHAR(10), and integer. 
+
+To insert information into the table, use the following command:
+
+	INSERT INTO persons (firstname, lastname, age) VALUES ('John', 'Johnson', 23);
+
+This will show insert the information. Be careful about consistency of input types. To look at all information in the  table 'persons', use the following command:
+
+	SELECT * FROM persons;
+
+This command will print everything currently in the table. 
+If we add another set of information, such as Jason Mason age 19, then the previous command will show both sets of information. To SELECT a single row of information, for example, only looking at Jason's information, the following command  can be used:
+
+	SELECT * FROM persons WHERE firstname='Jason';
+
+This will return just the information pertaining to Jason. If you want to just look up a person's name, in this case John, then use the following command.
+
+	SELECT age FROM persons WHERE firstname='John';
+
+This will return ONLY the age of the person, and no other information. For more details, please refer to the MySQL online resources.
+
+To change values in the table, the UPDATE command is used. For this example, we will only discuss changing one piece of information. To change 'John' to 'Jonathan', the following command is used:
+
+	UPDATE persons SET firstname='Jonathan' WHERE firstname='John';
+
+This command will affect only the column 'firstname' and the row where the firstname is 'John'. To change all names to Jonathan, you would simply remove the "WHERE clause" of the statement. Please refer to the manual for more information.
+
+To remove information, you can either wipe an entire database, or similarly to the select command, choose what you wish to delete. If we want to remove Jason's information from the record, then we use:
+
+	DELETE FROM persons where firstname='Jason';
+
+To delete an entire table, simply use the following command:
+
+	DELETE FROM persons;
+
+This will remove all information inside the table, but the table will still exist. To permanently remove a table from the database, use the command:
+
+	DROP TABLE persons;
+
+
